@@ -6822,7 +6822,7 @@
 0x40021034 C   FIELD 03w05 IRC14MADJ (rw): Internal 14M RC Oscillator clock trim adjust value
 0x40021034 C   FIELD 08w08 IRC14MCALIB (ro): Internal 14M RC Oscillator calibration value register
 0x40021080 B  REGISTER CFG3: Configuration register 4
-0x40021080 C   FIELD 00w03 CKOUT1SRC (rw): CKOUT1 Clock Source Selection
+0x40021080 C   FIELD 00w03 CKOUT1SEL (rw): CKOUT1 Clock Source Selection
 0x40021080 C   FIELD 08w06 CKOUT1DIV (rw): The CK_OUT1 divider which the CK_OUT1 frequency can be reduced see bits 2:0 of RCU_CFG3 for CK_OUT1
 0x400210F8 B  REGISTER ADDEN: Additional enable register
 0x400210F8 C   FIELD 00w01 I2C2EN (rw): I2C2 unit clock enable
