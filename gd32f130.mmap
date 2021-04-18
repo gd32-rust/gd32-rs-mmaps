@@ -740,7 +740,7 @@
 0x40005400 C   FIELD 04w01 ARPEN: ARP protocol in SMBus switch
 0x40005400 C   FIELD 05w01 PECEN: PEC Calculation Switch
 0x40005400 C   FIELD 06w01 GCEN: Whether or not to response to a General Call (0x00)
-0x40005400 C   FIELD 07w01 DISSTRC: Whether to stretch SCL low when data is not ready in slave mode
+0x40005400 C   FIELD 07w01 SS: Whether to stretch SCL low when data is not ready in slave mode
 0x40005400 C   FIELD 08w01 START: Generate a START condition on I2C bus
 0x40005400 C   FIELD 09w01 STOP: Generate a STOP condition on I2C bus
 0x40005400 C   FIELD 10w01 ACKEN: Whether or not to send an ACK
@@ -771,7 +771,7 @@
 0x40005414 C   FIELD 04w01 STPDET (ro): STOP condition detected in slave mode
 0x40005414 C   FIELD 06w01 RBNE (ro): TRBR is not Empty during receiving
 0x40005414 C   FIELD 07w01 TBE (ro): I2C_DATA is Empty during transmitting
-0x40005414 C   FIELD 08w01 BE (rw): Bus error
+0x40005414 C   FIELD 08w01 BERR (rw): Bus error
 0x40005414 C   FIELD 09w01 LOSTARB (rw): Arbitration Lost in master mode
 0x40005414 C   FIELD 10w01 AERR (rw): Acknowledge error
 0x40005414 C   FIELD 11w01 OUERR (rw): Over-run or under-run situation occurs in slave mode
@@ -781,12 +781,12 @@
 0x40005418 B  REGISTER STAT1 (ro): Transfer status register 1
 0x40005418 C   FIELD 00w01 MASTER: A flag indicating whether I2C block is in master or slave mode
 0x40005418 C   FIELD 01w01 I2CBSY: Busy flag
-0x40005418 C   FIELD 02w01 TRS: Whether the I2C is a transmitter or a receiver
+0x40005418 C   FIELD 02w01 TR: Whether the I2C is a transmitter or a receiver
 0x40005418 C   FIELD 04w01 RXGC: General call address (00h) received
 0x40005418 C   FIELD 05w01 DEFSMB: SMBus host header in slave mode
 0x40005418 C   FIELD 06w01 HSTSMB: SMBus Host Header detected in slave mode
 0x40005418 C   FIELD 07w01 DUMODF: Dual Flag in slave mode
-0x40005418 C   FIELD 08w08 ECV: Packet Error Checking Value
+0x40005418 C   FIELD 08w08 PECV: Packet Error Checking Value
 0x4000541C B  REGISTER CKCFG (rw): Clock configure register
 0x4000541C C   FIELD 00w12 CLKC: I2C Clock control in master mode
 0x4000541C C   FIELD 14w01 DTCY: Duty cycle in fast mode
@@ -814,7 +814,7 @@
 0x40005800 C   FIELD 04w01 ARPEN: ARP protocol in SMBus switch
 0x40005800 C   FIELD 05w01 PECEN: PEC Calculation Switch
 0x40005800 C   FIELD 06w01 GCEN: Whether or not to response to a General Call (0x00)
-0x40005800 C   FIELD 07w01 DISSTRC: Whether to stretch SCL low when data is not ready in slave mode
+0x40005800 C   FIELD 07w01 SS: Whether to stretch SCL low when data is not ready in slave mode
 0x40005800 C   FIELD 08w01 START: Generate a START condition on I2C bus
 0x40005800 C   FIELD 09w01 STOP: Generate a STOP condition on I2C bus
 0x40005800 C   FIELD 10w01 ACKEN: Whether or not to send an ACK
@@ -845,7 +845,7 @@
 0x40005814 C   FIELD 04w01 STPDET (ro): STOP condition detected in slave mode
 0x40005814 C   FIELD 06w01 RBNE (ro): TRBR is not Empty during receiving
 0x40005814 C   FIELD 07w01 TBE (ro): I2C_DATA is Empty during transmitting
-0x40005814 C   FIELD 08w01 BE (rw): Bus error
+0x40005814 C   FIELD 08w01 BERR (rw): Bus error
 0x40005814 C   FIELD 09w01 LOSTARB (rw): Arbitration Lost in master mode
 0x40005814 C   FIELD 10w01 AERR (rw): Acknowledge error
 0x40005814 C   FIELD 11w01 OUERR (rw): Over-run or under-run situation occurs in slave mode
@@ -855,12 +855,12 @@
 0x40005818 B  REGISTER STAT1 (ro): Transfer status register 1
 0x40005818 C   FIELD 00w01 MASTER: A flag indicating whether I2C block is in master or slave mode
 0x40005818 C   FIELD 01w01 I2CBSY: Busy flag
-0x40005818 C   FIELD 02w01 TRS: Whether the I2C is a transmitter or a receiver
+0x40005818 C   FIELD 02w01 TR: Whether the I2C is a transmitter or a receiver
 0x40005818 C   FIELD 04w01 RXGC: General call address (00h) received
 0x40005818 C   FIELD 05w01 DEFSMB: SMBus host header in slave mode
 0x40005818 C   FIELD 06w01 HSTSMB: SMBus Host Header detected in slave mode
 0x40005818 C   FIELD 07w01 DUMODF: Dual Flag in slave mode
-0x40005818 C   FIELD 08w08 ECV: Packet Error Checking Value
+0x40005818 C   FIELD 08w08 PECV: Packet Error Checking Value
 0x4000581C B  REGISTER CKCFG (rw): Clock configure register
 0x4000581C C   FIELD 00w12 CLKC: I2C Clock control in master mode
 0x4000581C C   FIELD 14w01 DTCY: Duty cycle in fast mode
@@ -5515,7 +5515,7 @@
 0x4000C000 C   FIELD 04w01 ARPEN: ARP protocol in SMBus switch
 0x4000C000 C   FIELD 05w01 PECEN: PEC Calculation Switch
 0x4000C000 C   FIELD 06w01 GCEN: Whether or not to response to a General Call (0x00)
-0x4000C000 C   FIELD 07w01 DISSTRC: Whether to stretch SCL low when data is not ready in slave mode
+0x4000C000 C   FIELD 07w01 SS: Whether to stretch SCL low when data is not ready in slave mode
 0x4000C000 C   FIELD 08w01 START: Generate a START condition on I2C bus
 0x4000C000 C   FIELD 09w01 STOP: Generate a STOP condition on I2C bus
 0x4000C000 C   FIELD 10w01 ACKEN: Whether or not to send an ACK
@@ -5546,7 +5546,7 @@
 0x4000C014 C   FIELD 04w01 STPDET (ro): STOP condition detected in slave mode
 0x4000C014 C   FIELD 06w01 RBNE (ro): TRBR is not Empty during receiving
 0x4000C014 C   FIELD 07w01 TBE (ro): I2C_DATA is Empty during transmitting
-0x4000C014 C   FIELD 08w01 BE (rw): Bus error
+0x4000C014 C   FIELD 08w01 BERR (rw): Bus error
 0x4000C014 C   FIELD 09w01 LOSTARB (rw): Arbitration Lost in master mode
 0x4000C014 C   FIELD 10w01 AERR (rw): Acknowledge error
 0x4000C014 C   FIELD 11w01 OUERR (rw): Over-run or under-run situation occurs in slave mode
@@ -5556,12 +5556,12 @@
 0x4000C018 B  REGISTER STAT1 (ro): Transfer status register 1
 0x4000C018 C   FIELD 00w01 MASTER: A flag indicating whether I2C block is in master or slave mode
 0x4000C018 C   FIELD 01w01 I2CBSY: Busy flag
-0x4000C018 C   FIELD 02w01 TRS: Whether the I2C is a transmitter or a receiver
+0x4000C018 C   FIELD 02w01 TR: Whether the I2C is a transmitter or a receiver
 0x4000C018 C   FIELD 04w01 RXGC: General call address (00h) received
 0x4000C018 C   FIELD 05w01 DEFSMB: SMBus host header in slave mode
 0x4000C018 C   FIELD 06w01 HSTSMB: SMBus Host Header detected in slave mode
 0x4000C018 C   FIELD 07w01 DUMODF: Dual Flag in slave mode
-0x4000C018 C   FIELD 08w08 ECV: Packet Error Checking Value
+0x4000C018 C   FIELD 08w08 PECV: Packet Error Checking Value
 0x4000C01C B  REGISTER CKCFG (rw): Clock configure register
 0x4000C01C C   FIELD 00w12 CLKC: I2C Clock control in master mode
 0x4000C01C C   FIELD 14w01 DTCY: Duty cycle in fast mode
