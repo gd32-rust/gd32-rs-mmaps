@@ -531,17 +531,17 @@
 0x40003808 C   FIELD 02w01 I2SCH (ro): I2S channel side
 0x40003808 C   FIELD 03w01 TXURERR (ro): Transmission underrun error bit
 0x40003808 C   FIELD 04w01 CRCERR (rw): SPI CRC Error Bit
-0x40003808 C   FIELD 05w01 CONFE (ro): SPI Configuration error
+0x40003808 C   FIELD 05w01 CONFERR (ro): SPI Configuration error
 0x40003808 C   FIELD 06w01 RXORERR (ro): Reception Overrun Error Bit
 0x40003808 C   FIELD 07w01 TRANS (ro): Transmitting On-going Bit
 0x4000380C B  REGISTER DATA (rw): data register
 0x4000380C C   FIELD 00w16 DATA: Data register
-0x40003810 B  REGISTER CPCPOLY (rw): CRC polynomial register
-0x40003810 C   FIELD 00w16 CPR: CRC polynomial register
+0x40003810 B  REGISTER CRCPOLY (rw): CRC polynomial register
+0x40003810 C   FIELD 00w16 CRCPOLY: CRC polynomial register
 0x40003814 B  REGISTER RCRC (ro): Receive CRC register
-0x40003814 C   FIELD 00w16 RCR: CRC value of the received bytes
+0x40003814 C   FIELD 00w16 RCRC: CRC value of the received bytes
 0x40003818 B  REGISTER TCRC (ro): Transmit CRC register
-0x40003818 C   FIELD 00w16 TCR: CRC value of the transmitted bytes
+0x40003818 C   FIELD 00w16 TCRC: CRC value of the transmitted bytes
 0x4000381C B  REGISTER I2SCTL (rw): I2S control register
 0x4000381C C   FIELD 00w01 CHLEN: Channel length
 0x4000381C C   FIELD 01w02 DTLEN: Data length
@@ -588,17 +588,17 @@
 0x40003C08 C   FIELD 02w01 I2SCH (ro): I2S channel side
 0x40003C08 C   FIELD 03w01 TXURERR (ro): Transmission underrun error bit
 0x40003C08 C   FIELD 04w01 CRCERR (rw): SPI CRC Error Bit
-0x40003C08 C   FIELD 05w01 CONFE (ro): SPI Configuration error
+0x40003C08 C   FIELD 05w01 CONFERR (ro): SPI Configuration error
 0x40003C08 C   FIELD 06w01 RXORERR (ro): Reception Overrun Error Bit
 0x40003C08 C   FIELD 07w01 TRANS (ro): Transmitting On-going Bit
 0x40003C0C B  REGISTER DATA (rw): data register
 0x40003C0C C   FIELD 00w16 DATA: Data register
-0x40003C10 B  REGISTER CPCPOLY (rw): CRC polynomial register
-0x40003C10 C   FIELD 00w16 CPR: CRC polynomial register
+0x40003C10 B  REGISTER CRCPOLY (rw): CRC polynomial register
+0x40003C10 C   FIELD 00w16 CRCPOLY: CRC polynomial register
 0x40003C14 B  REGISTER RCRC (ro): Receive CRC register
-0x40003C14 C   FIELD 00w16 RCR: CRC value of the received bytes
+0x40003C14 C   FIELD 00w16 RCRC: CRC value of the received bytes
 0x40003C18 B  REGISTER TCRC (ro): Transmit CRC register
-0x40003C18 C   FIELD 00w16 TCR: CRC value of the transmitted bytes
+0x40003C18 C   FIELD 00w16 TCRC: CRC value of the transmitted bytes
 0x40003C1C B  REGISTER I2SCTL (rw): I2S control register
 0x40003C1C C   FIELD 00w01 CHLEN: Channel length
 0x40003C1C C   FIELD 01w02 DTLEN: Data length
@@ -6081,17 +6081,17 @@
 0x40013008 C   FIELD 02w01 I2SCH (ro): I2S channel side
 0x40013008 C   FIELD 03w01 TXURERR (ro): Transmission underrun error bit
 0x40013008 C   FIELD 04w01 CRCERR (rw): SPI CRC Error Bit
-0x40013008 C   FIELD 05w01 CONFE (ro): SPI Configuration error
+0x40013008 C   FIELD 05w01 CONFERR (ro): SPI Configuration error
 0x40013008 C   FIELD 06w01 RXORERR (ro): Reception Overrun Error Bit
 0x40013008 C   FIELD 07w01 TRANS (ro): Transmitting On-going Bit
 0x4001300C B  REGISTER DATA (rw): data register
 0x4001300C C   FIELD 00w16 DATA: Data register
-0x40013010 B  REGISTER CPCPOLY (rw): CRC polynomial register
-0x40013010 C   FIELD 00w16 CPR: CRC polynomial register
+0x40013010 B  REGISTER CRCPOLY (rw): CRC polynomial register
+0x40013010 C   FIELD 00w16 CRCPOLY: CRC polynomial register
 0x40013014 B  REGISTER RCRC (ro): Receive CRC register
-0x40013014 C   FIELD 00w16 RCR: CRC value of the received bytes
+0x40013014 C   FIELD 00w16 RCRC: CRC value of the received bytes
 0x40013018 B  REGISTER TCRC (ro): Transmit CRC register
-0x40013018 C   FIELD 00w16 TCR: CRC value of the transmitted bytes
+0x40013018 C   FIELD 00w16 TCRC: CRC value of the transmitted bytes
 0x4001301C B  REGISTER I2SCTL (rw): I2S control register
 0x4001301C C   FIELD 00w01 CHLEN: Channel length
 0x4001301C C   FIELD 01w02 DTLEN: Data length
