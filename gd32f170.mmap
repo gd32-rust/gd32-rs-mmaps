@@ -1119,7 +1119,7 @@
 0x40006418 C   FIELD 16w08 TECNT (ro): Transmit Error Count
 0x40006418 C   FIELD 24w08 RECNT (ro): Receive Error Count
 0x4000641C B  REGISTER BT (rw): Bit timing register
-0x4000641C C   FIELD 00w10 BUADPSC: Baud rate prescaler
+0x4000641C C   FIELD 00w10 BAUDPSC: Baud rate prescaler
 0x4000641C C   FIELD 16w04 BS1: Bit segment 1
 0x4000641C C   FIELD 20w03 BS2: Bit segment 2
 0x4000641C C   FIELD 24w02 SJW: Resynchronization jump width
@@ -3271,7 +3271,7 @@
 0x40006818 C   FIELD 16w08 TECNT (ro): Transmit Error Count
 0x40006818 C   FIELD 24w08 RECNT (ro): Receive Error Count
 0x4000681C B  REGISTER BT (rw): Bit timing register
-0x4000681C C   FIELD 00w10 BUADPSC: Baud rate prescaler
+0x4000681C C   FIELD 00w10 BAUDPSC: Baud rate prescaler
 0x4000681C C   FIELD 16w04 BS1: Bit segment 1
 0x4000681C C   FIELD 20w03 BS2: Bit segment 2
 0x4000681C C   FIELD 24w02 SJW: Resynchronization jump width
