@@ -52,7 +52,6 @@
 0x40000014 C   FIELD 03w01 CH2G: Channel 2 capture or compare event generation
 0x40000014 C   FIELD 04w01 CH3G: Channel 3 capture or compare event generation
 0x40000014 C   FIELD 06w01 TRGG: Trigger generation
-0x40000014 C   FIELD 07w01 BRKG: Break event generation
 0x40000018 B  REGISTER CHCTL0_Input (rw): Channel control register 0 (input mode)
 0x40000018 B  REGISTER CHCTL0_Output (rw): Channel control register 0 (output mode)
 0x40000018 C   FIELD 00w02 CH0MS: Channel 0 mode selection
@@ -177,7 +176,6 @@
 0x40000414 C   FIELD 03w01 CH2G: Channel 2 capture or compare event generation
 0x40000414 C   FIELD 04w01 CH3G: Channel 3 capture or compare event generation
 0x40000414 C   FIELD 06w01 TRGG: Trigger generation
-0x40000414 C   FIELD 07w01 BRKG: Break event generation
 0x40000418 B  REGISTER CHCTL0_Input (rw): Channel control register 0 (input mode)
 0x40000418 B  REGISTER CHCTL0_Output (rw): Channel control register 0 (output mode)
 0x40000418 C   FIELD 00w02 CH0MS: Channel 0 mode selection
