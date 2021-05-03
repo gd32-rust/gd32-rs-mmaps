@@ -305,50 +305,6 @@
 0x40002034 C   FIELD 00w16 CH0VAL: Capture or compare value of channel 0
 0x40002050 B  REGISTER IRMP (rw): Channel input remap register
 0x40002050 C   FIELD 00w02 CI0_RMP: Channel 0 input remap
-0x40002400 A PERIPHERAL SLCD
-0x40002400 B  REGISTER CTL: Control register
-0x40002400 C   FIELD 00w01 SLCDON (rw): SLCD controller start
-0x40002400 C   FIELD 01w01 VSRC (rw): SLCD voltage source
-0x40002400 C   FIELD 02w03 DUTY (rw): Duty select
-0x40002400 C   FIELD 05w02 BIAS (rw): Bias select
-0x40002400 C   FIELD 07w01 COMS (rw): Common/segment padselect
-0x40002404 B  REGISTER CFG: SLCD configuration register
-0x40002404 C   FIELD 00w01 HDEN (rw): High drive enable
-0x40002404 C   FIELD 01w01 SOFIE (rw): Start of frame interrupt enable
-0x40002404 C   FIELD 03w01 UPDIE (rw): SLCD update done interrupt enable
-0x40002404 C   FIELD 04w03 PULSE (rw): Pulse on duration
-0x40002404 C   FIELD 07w03 DTD (rw): Dead time duration
-0x40002404 C   FIELD 10w03 CONR (rw): Contrast ratio
-0x40002404 C   FIELD 13w03 BLKDIV (rw): Blink frequency divider
-0x40002404 C   FIELD 16w02 BLKMOD (rw): Blink mode
-0x40002404 C   FIELD 18w04 DIV (rw): SLCD clock divider
-0x40002404 C   FIELD 22w04 PSC (rw): SLCD clock prescaler
-0x40002408 B  REGISTER STAT: SLCD status flag register
-0x40002408 C   FIELD 00w01 ONF (ro): SLCD controller on flag
-0x40002408 C   FIELD 01w01 SOF (ro): Start of frame flag
-0x40002408 C   FIELD 02w01 UPRF (rw): Update SLCD data request flag
-0x40002408 C   FIELD 03w01 UPDF (ro): Update SLCD data done flag
-0x40002408 C   FIELD 04w01 VRDYF (ro): SLCD voltage ready flag
-0x40002408 C   FIELD 05w01 SYNF (ro): SLCD_CFG register synchronization flag
-0x4000240C B  REGISTER STATC: SLCD status flag clear register
-0x4000240C C   FIELD 01w01 SOFC (rw): Start of frame flag clear
-0x4000240C C   FIELD 03w01 UPDC (rw): SLCD data update done clear bit
-0x40002414 B  REGISTER DATA0: SLCD display data register
-0x40002414 C   FIELD 00w32 SEG_DATA0 (rw): Each bit corresponds to one segment to display
-0x4000241C B  REGISTER DATA1: SLCD display data register
-0x4000241C C   FIELD 00w32 SEG_DATA1 (rw): Each bit corresponds to one segment to display
-0x40002424 B  REGISTER DATA2: SLCD display data register
-0x40002424 C   FIELD 00w32 SEG_DATA2 (rw): Each bit corresponds to one segment to display
-0x4000242C B  REGISTER DATA3: SLCD display data register
-0x4000242C C   FIELD 00w32 SEG_DATA3 (rw): Each bit corresponds to one segment to display
-0x40002434 B  REGISTER DATA4: SLCD display data register
-0x40002434 C   FIELD 00w32 SEG_DATA4 (rw): Each bit corresponds to one segment to display
-0x4000243C B  REGISTER DATA5: SLCD display data register
-0x4000243C C   FIELD 00w32 SEG_DATA5 (rw): Each bit corresponds to one segment to display
-0x40002444 B  REGISTER DATA6: SLCD display data register
-0x40002444 C   FIELD 00w32 SEG_DATA6 (rw): Each bit corresponds to one segment to display
-0x4000244C B  REGISTER DATA7: SLCD display data register
-0x4000244C C   FIELD 00w32 SEG_DATA7 (rw): Each bit corresponds to one segment to display
 0x40002800 A PERIPHERAL RTC
 0x40002800 B  REGISTER TIME (rw): Time of day register
 0x40002800 C   FIELD 00w04 SCU: Second units in BCD format
@@ -547,10 +503,6 @@
 0x40003820 C   FIELD 00w08 DIV: Dividing factor for the prescaler
 0x40003820 C   FIELD 08w01 OF: Odd factor for the prescaler
 0x40003820 C   FIELD 09w01 MCKOEN: I2S_MCK output enable
-0x40003880 B  REGISTER QCTL (rw): Quad wire control register
-0x40003880 C   FIELD 00w01 QMOD: Quad wire mode enable
-0x40003880 C   FIELD 01w01 QRD: Quad wire read select
-0x40003880 C   FIELD 02w01 IO23_DRV: Drive IO2 and IO3 enable
 0x40003C00 A PERIPHERAL SPI2
 0x40003C00 B  REGISTER CTL0 (rw): control register 0
 0x40003C00 C   FIELD 00w01 CKPH: Clock Phase Selection
@@ -604,10 +556,6 @@
 0x40003C20 C   FIELD 00w08 DIV: Dividing factor for the prescaler
 0x40003C20 C   FIELD 08w01 OF: Odd factor for the prescaler
 0x40003C20 C   FIELD 09w01 MCKOEN: I2S_MCK output enable
-0x40003C80 B  REGISTER QCTL (rw): Quad wire control register
-0x40003C80 C   FIELD 00w01 QMOD: Quad wire mode enable
-0x40003C80 C   FIELD 01w01 QRD: Quad wire read select
-0x40003C80 C   FIELD 02w01 IO23_DRV: Drive IO2 and IO3 enable
 0x40004400 A PERIPHERAL USART1
 0x40004400 B  REGISTER CTL0 (rw): Control register 0
 0x40004400 C   FIELD 00w01 UEN: USART enable
@@ -846,167 +794,6 @@
 0x4000581C C   FIELD 15w01 FAST: I2C speed selection in master mode
 0x40005820 B  REGISTER RT (rw): Rise time register
 0x40005820 C   FIELD 00w06 RISETIME: Maximum rise time in master mode
-0x40005C00 A PERIPHERAL USBD
-0x40005C00 B  REGISTER EP0CS (rw): endpoint 0 register
-0x40005C00 C   FIELD 00w04 EP_AR: Endpoint address
-0x40005C00 C   FIELD 04w02 TX_STA: Status bits, for transmission transfers
-0x40005C00 C   FIELD 06w01 TX_DTG: Transmission Data PID Toggle
-0x40005C00 C   FIELD 07w01 TX_ST: Transmission Successful Transfer
-0x40005C00 C   FIELD 08w01 EP_KCTL: Endpoint kind control
-0x40005C00 C   FIELD 09w02 EP_CTL: Endpoint type control
-0x40005C00 C   FIELD 11w01 SETUP: Setup transaction completed
-0x40005C00 C   FIELD 12w02 RX_STA: Reception status bits
-0x40005C00 C   FIELD 14w01 RX_DTG: Reception Data PID Toggle
-0x40005C00 C   FIELD 15w01 RX_ST: Reception Successful Transferred
-0x40005C04 B  REGISTER EP1CS (rw): endpoint 1 register
-0x40005C04 C   FIELD 00w04 EP_AR: Endpoint address
-0x40005C04 C   FIELD 04w02 TX_STA: Status bits, for transmission transfers
-0x40005C04 C   FIELD 06w01 TX_DTG: Transmission Data PID Toggle
-0x40005C04 C   FIELD 07w01 TX_ST: Transmission Successful Transfer
-0x40005C04 C   FIELD 08w01 EP_KCTL: Endpoint kind control
-0x40005C04 C   FIELD 09w02 EP_CTL: Endpoint type control
-0x40005C04 C   FIELD 11w01 SETUP: Setup transaction completed
-0x40005C04 C   FIELD 12w02 RX_STA: Reception status bits
-0x40005C04 C   FIELD 14w01 RX_DTG: Reception Data PID Toggle
-0x40005C04 C   FIELD 15w01 RX_ST: Reception Successful Transferred
-0x40005C08 B  REGISTER EP2CS (rw): endpoint 2 register
-0x40005C08 C   FIELD 00w04 EP_AR: Endpoint address
-0x40005C08 C   FIELD 04w02 TX_STA: Status bits, for transmission transfers
-0x40005C08 C   FIELD 06w01 TX_DTG: Transmission Data PID Toggle
-0x40005C08 C   FIELD 07w01 TX_ST: Transmission Successful Transfer
-0x40005C08 C   FIELD 08w01 EP_KCTL: Endpoint kind control
-0x40005C08 C   FIELD 09w02 EP_CTL: Endpoint type control
-0x40005C08 C   FIELD 11w01 SETUP: Setup transaction completed
-0x40005C08 C   FIELD 12w02 RX_STA: Reception status bits
-0x40005C08 C   FIELD 14w01 RX_DTG: Reception Data PID Toggle
-0x40005C08 C   FIELD 15w01 RX_ST: Reception Successful Transferred
-0x40005C0C B  REGISTER EP3CS (rw): endpoint 3 register
-0x40005C0C C   FIELD 00w04 EP_AR: Endpoint address
-0x40005C0C C   FIELD 04w02 TX_STA: Status bits, for transmission transfers
-0x40005C0C C   FIELD 06w01 TX_DTG: Transmission Data PID Toggle
-0x40005C0C C   FIELD 07w01 TX_ST: Transmission Successful Transfer
-0x40005C0C C   FIELD 08w01 EP_KCTL: Endpoint kind control
-0x40005C0C C   FIELD 09w02 EP_CTL: Endpoint type control
-0x40005C0C C   FIELD 11w01 SETUP: Setup transaction completed
-0x40005C0C C   FIELD 12w02 RX_STA: Reception status bits
-0x40005C0C C   FIELD 14w01 RX_DTG: Reception Data PID Toggle
-0x40005C0C C   FIELD 15w01 RX_ST: Reception Successful Transferred
-0x40005C10 B  REGISTER EP4CS (rw): endpoint 4 register
-0x40005C10 C   FIELD 00w04 EP_AR: Endpoint address
-0x40005C10 C   FIELD 04w02 TX_STA: Status bits, for transmission transfers
-0x40005C10 C   FIELD 06w01 TX_DTG: Transmission Data PID Toggle
-0x40005C10 C   FIELD 07w01 TX_ST: Transmission Successful Transfer
-0x40005C10 C   FIELD 08w01 EP_KCTL: Endpoint kind control
-0x40005C10 C   FIELD 09w02 EP_CTL: Endpoint type control
-0x40005C10 C   FIELD 11w01 SETUP: Setup transaction completed
-0x40005C10 C   FIELD 12w02 RX_STA: Reception status bits
-0x40005C10 C   FIELD 14w01 RX_DTG: Reception Data PID Toggle
-0x40005C10 C   FIELD 15w01 RX_ST: Reception Successful Transferred
-0x40005C14 B  REGISTER EP5CS (rw): endpoint 5 register
-0x40005C14 C   FIELD 00w04 EP_AR: Endpoint address
-0x40005C14 C   FIELD 04w02 TX_STA: Status bits, for transmission transfers
-0x40005C14 C   FIELD 06w01 TX_DTG: Transmission Data PID Toggle
-0x40005C14 C   FIELD 07w01 TX_ST: Transmission Successful Transfer
-0x40005C14 C   FIELD 08w01 EP_KCTL: Endpoint kind control
-0x40005C14 C   FIELD 09w02 EP_CTL: Endpoint type control
-0x40005C14 C   FIELD 11w01 SETUP: Setup transaction completed
-0x40005C14 C   FIELD 12w02 RX_STA: Reception status bits
-0x40005C14 C   FIELD 14w01 RX_DTG: Reception Data PID Toggle
-0x40005C14 C   FIELD 15w01 RX_ST: Reception Successful Transferred
-0x40005C18 B  REGISTER EP6CS (rw): endpoint 6 register
-0x40005C18 C   FIELD 00w04 EP_AR: Endpoint address
-0x40005C18 C   FIELD 04w02 TX_STA: Status bits, for transmission transfers
-0x40005C18 C   FIELD 06w01 TX_DTG: Transmission Data PID Toggle
-0x40005C18 C   FIELD 07w01 TX_ST: Transmission Successful Transfer
-0x40005C18 C   FIELD 08w01 EP_KCTL: Endpoint kind control
-0x40005C18 C   FIELD 09w02 EP_CTL: Endpoint type control
-0x40005C18 C   FIELD 11w01 SETUP: Setup transaction completed
-0x40005C18 C   FIELD 12w02 RX_STA: Reception status bits
-0x40005C18 C   FIELD 14w01 RX_DTG: Reception Data PID Toggle
-0x40005C18 C   FIELD 15w01 RX_ST: Reception Successful Transferred
-0x40005C1C B  REGISTER EP7CS (rw): endpoint 7 register
-0x40005C1C C   FIELD 00w04 EP_AR: Endpoint address
-0x40005C1C C   FIELD 04w02 TX_STA: Status bits, for transmission transfers
-0x40005C1C C   FIELD 06w01 TX_DTG: Transmission Data PID Toggle
-0x40005C1C C   FIELD 07w01 TX_ST: Transmission Successful Transfer
-0x40005C1C C   FIELD 08w01 EP_KCTL: Endpoint kind control
-0x40005C1C C   FIELD 09w02 EP_CTL: Endpoint type control
-0x40005C1C C   FIELD 11w01 SETUP: Setup transaction completed
-0x40005C1C C   FIELD 12w02 RX_STA: Reception status bits
-0x40005C1C C   FIELD 14w01 RX_DTG: Reception Data PID Toggle
-0x40005C1C C   FIELD 15w01 RX_ST: Reception Successful Transferred
-0x40005C40 B  REGISTER CTL (rw): control register
-0x40005C40 C   FIELD 00w01 SETRST: USB Reset
-0x40005C40 C   FIELD 01w01 CLOSE: USB close
-0x40005C40 C   FIELD 02w01 LOWM: Low-power mode
-0x40005C40 C   FIELD 03w01 SETSPS: Set suspend state
-0x40005C40 C   FIELD 04w01 RSREQ: Send resume request
-0x40005C40 C   FIELD 08w01 ESOFIE: Expected start of frame interrupt enable
-0x40005C40 C   FIELD 09w01 SOFIE: Start of frame interrupt enable
-0x40005C40 C   FIELD 10w01 RSTIE: USB reset interrupt enable
-0x40005C40 C   FIELD 11w01 SPSIE: Suspend state interrupt enable
-0x40005C40 C   FIELD 12w01 WKUPIE: Wakeup interrupt mask
-0x40005C40 C   FIELD 13w01 ERRIE: Error interrupt mask
-0x40005C40 C   FIELD 14w01 PMOUIE: Packet memory overrun / underrun interrupt enable
-0x40005C40 C   FIELD 15w01 STIE: Successful transfer interrupt enable
-0x40005C44 B  REGISTER INTF (rw): interrupt flag register
-0x40005C44 C   FIELD 00w04 EPNUM: Endpoint Number
-0x40005C44 C   FIELD 04w01 DIR: Direction of transaction
-0x40005C44 C   FIELD 08w01 ESOFIF: Expected start of frame interrupt flag
-0x40005C44 C   FIELD 09w01 SOFIF: Start of frame interrupt flag
-0x40005C44 C   FIELD 10w01 RSTIF: USB reset interrupt flag
-0x40005C44 C   FIELD 11w01 SPSIF: Suspend state interrupt flag
-0x40005C44 C   FIELD 12w01 WKUPIF: Wakeup interrupt flag
-0x40005C44 C   FIELD 13w01 ERRIF: Error interrupt flag
-0x40005C44 C   FIELD 14w01 PMOUIF: Packet memory overrun / underrun interrupt flag
-0x40005C44 C   FIELD 15w01 STIF: Successful transfer interrupt flag
-0x40005C48 B  REGISTER STAT (ro): Status register
-0x40005C48 C   FIELD 00w11 FCNT: Frame number counter
-0x40005C48 C   FIELD 11w02 SOFLN: SOF lost number
-0x40005C48 C   FIELD 13w01 LOCK: Locked the USB
-0x40005C48 C   FIELD 14w01 RX_DM: Receive data - line status
-0x40005C48 C   FIELD 15w01 RX_DP: Receive data + line status
-0x40005C4C B  REGISTER DADDR (rw): device address register
-0x40005C4C C   FIELD 00w07 USBADDR: USB device address
-0x40005C4C C   FIELD 07w01 USBEN: USB device enable
-0x40005C50 B  REGISTER BADDR (rw): Buffer address register
-0x40005C50 C   FIELD 03w13 BAR: Buffer address
-0x40005D00 B  REGISTER SEP0 (rw): USB sub-endpoint 0 register
-0x40005D00 C   FIELD 00w11 SUBPID_ATTR: LPM Token bmAttribute Field.
-0x40005D00 C   FIELD 12w02 SUB_STA: Status bits, for the handshake of receiving subpid LPM
-0x40005D00 C   FIELD 15w01 SUB_ST: Successful Receive for LPM Token
-0x40005D04 B  REGISTER SEP1 (rw): USB sub-endpoint 1 register
-0x40005D04 C   FIELD 00w11 SUBPID_ATTR: LPM Token bmAttribute Field.
-0x40005D04 C   FIELD 12w02 SUB_STA: Status bits, for the handshake of receiving subpid LPM
-0x40005D04 C   FIELD 15w01 SUB_ST: Successful Receive for LPM Token
-0x40005D08 B  REGISTER SEP2 (rw): USB sub-endpoint 2 register
-0x40005D08 C   FIELD 00w11 SUBPID_ATTR: LPM Token bmAttribute Field.
-0x40005D08 C   FIELD 12w02 SUB_STA: Status bits, for the handshake of receiving subpid LPM
-0x40005D08 C   FIELD 15w01 SUB_ST: Successful Receive for LPM Token
-0x40005D0C B  REGISTER SEP3 (rw): USB sub-endpoint 3 register
-0x40005D0C C   FIELD 00w11 SUBPID_ATTR: LPM Token bmAttribute Field.
-0x40005D0C C   FIELD 12w02 SUB_STA: Status bits, for the handshake of receiving subpid LPM
-0x40005D0C C   FIELD 15w01 SUB_ST: Successful Receive for LPM Token
-0x40005D10 B  REGISTER SEP4 (rw): USB sub-endpoint 4 register
-0x40005D10 C   FIELD 00w11 SUBPID_ATTR: LPM Token bmAttribute Field.
-0x40005D10 C   FIELD 12w02 SUB_STA: Status bits, for the handshake of receiving subpid LPM
-0x40005D10 C   FIELD 15w01 SUB_ST: Successful Receive for LPM Token
-0x40005D14 B  REGISTER SEP5 (rw): USB sub-endpoint 5 register
-0x40005D14 C   FIELD 00w11 SUBPID_ATTR: LPM Token bmAttribute Field.
-0x40005D14 C   FIELD 12w02 SUB_STA: Status bits, for the handshake of receiving subpid LPM
-0x40005D14 C   FIELD 15w01 SUB_ST: Successful Receive for LPM Token
-0x40005D18 B  REGISTER SEP6 (rw): USB sub-endpoint 6 register
-0x40005D18 C   FIELD 00w11 SUBPID_ATTR: LPM Token bmAttribute Field.
-0x40005D18 C   FIELD 12w02 SUB_STA: Status bits, for the handshake of receiving subpid LPM
-0x40005D18 C   FIELD 15w01 SUB_ST: Successful Receive for LPM Token
-0x40005D1C B  REGISTER SEP7 (rw): USB sub-endpoint 7 register
-0x40005D1C C   FIELD 00w11 SUBPID_ATTR: LPM Token bmAttribute Field.
-0x40005D1C C   FIELD 12w02 SUB_STA: Status bits, for the handshake of receiving subpid LPM
-0x40005D1C C   FIELD 15w01 SUB_ST: Successful Receive for LPM Token
-0x40005D40 B  REGISTER LPMCTL (rw): USB LPM control register
-0x40005D40 C   FIELD 15w01 LPMSTIE: LPM token successful transfer interrupt enable
-0x40005D44 B  REGISTER LPMINTF (rw): USB LPM interrupt flag register
-0x40005D44 C   FIELD 15w01 LPMSTIF: LPM token Correct transfer interrupt flag
 0x40007000 A PERIPHERAL PMU
 0x40007000 B  REGISTER CTL (rw): power control register
 0x40007000 C   FIELD 00w01 LDOLP: LDO Low Power Mode
@@ -1070,51 +857,6 @@
 0x40007814 C   FIELD 11w01 TERRIE: TERR Interrupt Enable
 0x40007814 C   FIELD 12w01 TAERRIE: TAERR Interrupt Enable
 0x40007C00 A PERIPHERAL OPA_IVREF
-0x40007C5C B  REGISTER OPA_CTL: OPA control register
-0x40007C5C C   FIELD 00w01 OPA0PD (rw): OPA0 power down
-0x40007C5C C   FIELD 01w01 T3OPA0 (rw): T3 switch enable for OPA0
-0x40007C5C C   FIELD 02w01 S1OPA0 (rw): S1 switch enable for OPA0
-0x40007C5C C   FIELD 03w01 S2OPA0 (rw): S2 switch enable for OPA0
-0x40007C5C C   FIELD 04w01 S3OPA0 (rw): S3 switch enable for OPA0
-0x40007C5C C   FIELD 05w01 OPA0CAL_L (rw): OPA0 offset calibration for P diff
-0x40007C5C C   FIELD 06w01 OPA0CAL_H (rw): OPA0 offset calibration for N diff
-0x40007C5C C   FIELD 07w01 OPA0LPM (rw): OPA0 low power mode
-0x40007C5C C   FIELD 08w01 OPA1PD (rw): OPA1 power down
-0x40007C5C C   FIELD 09w01 T3OPA1 (rw): T3 switch enable for OPA1
-0x40007C5C C   FIELD 10w01 S1OPA1 (rw): S1 switch enable for OPA1
-0x40007C5C C   FIELD 11w01 S2OPA1 (rw): S2 switch enable for OPA1
-0x40007C5C C   FIELD 12w01 S3OPA1 (rw): S3 switch enable for OPA1
-0x40007C5C C   FIELD 13w01 OPA1CAL_L (rw): OPA1 offset calibration for P diff
-0x40007C5C C   FIELD 14w01 OPA1CAL_H (rw): OPA1 offset calibration for N diff
-0x40007C5C C   FIELD 15w01 OPA1LPM (rw): OPA1 low power mode
-0x40007C5C C   FIELD 16w01 OPA2PD (rw): OPA2 power down
-0x40007C5C C   FIELD 17w01 T3OPA2 (rw): T3 switch enable for OPA2
-0x40007C5C C   FIELD 18w01 S1OPA2 (rw): S1 switch enable for OPA2
-0x40007C5C C   FIELD 19w01 S2OPA2 (rw): S2 switch enable for OPA2
-0x40007C5C C   FIELD 20w01 S3OPA2 (rw): S3 switch enable for OPA2
-0x40007C5C C   FIELD 21w01 OPA2CAL_L (rw): OPA2 offset calibration for P diff
-0x40007C5C C   FIELD 22w01 OPA2CAL_H (rw): OPA2 offset calibration for N diff
-0x40007C5C C   FIELD 23w01 OPA2LPM (rw): OPA2 low power mode
-0x40007C5C C   FIELD 27w01 S4OPA1 (rw): S4 switch enable for OPA1
-0x40007C5C C   FIELD 28w01 OPA_RANGE (rw): Power supply range
-0x40007C5C C   FIELD 29w01 OPA0CALOUT (rw): OPA0 calibration output
-0x40007C5C C   FIELD 30w01 OPA1CALOUT (rw): OPA1 calibration output
-0x40007C5C C   FIELD 31w01 OPA2CALOUT (rw): OPA2 calibration output
-0x40007C60 B  REGISTER OPA_BT: OPA offset trimming for normal mode register
-0x40007C60 C   FIELD 00w05 OA0_TRIM_LOW (rw): OPA0, normal mode 5-bit offset trim value for PMOS pairs
-0x40007C60 C   FIELD 05w05 OA0_TRIM_HIGH (rw): OPA0, normal mode 5-bit offset trim value for NMOS pairs
-0x40007C60 C   FIELD 10w05 OA1_TRIM_LOW (rw): OPA1, normal mode 5-bit offset trim value for PMOS pairs
-0x40007C60 C   FIELD 15w05 OA1_TRIM_HIGH (rw): OPA1, normal mode 5-bit offset trim value for NMOS pairs
-0x40007C60 C   FIELD 20w05 OA2_TRIM_LOW (rw): OPA2, normal mode 5-bit offset trim value for PMOS pairs
-0x40007C60 C   FIELD 25w05 OA2_TRIM_HIGH (rw): OPA2, normal mode 5-bit offset trim value for NMOS pairs
-0x40007C60 C   FIELD 31w01 OT_USER (rw): user programmed trimming value
-0x40007C64 B  REGISTER OPA_LPBT: OPA offset trimming for low power mode register
-0x40007C64 C   FIELD 00w05 OA0_TRIM_LP_LOW (rw): OPA0, low power mode 5-bit offset trim value for PMOS pairs
-0x40007C64 C   FIELD 05w05 OA0_TRIM_LP_HIGH (rw): OPA0, low power mode 5-bit offset trim value for NMOS pairs
-0x40007C64 C   FIELD 10w05 OA1_TRIM_LP_LOW (rw): OPA1, low power mode 5-bit offset trim value for PMOS pairs
-0x40007C64 C   FIELD 15w05 OA1_TRIM_LP_HIGH (rw): OPA1, low power mode 5-bit offset trim value for NMOS pairs
-0x40007C64 C   FIELD 20w05 OA2_TRIM_LP_LOW (rw): OPA2, low power mode 5-bit offset trim value for PMOS pairs
-0x40007C64 C   FIELD 25w05 OA2_TRIM_LP_HIGH (rw): OPA2, low power mode 5-bit offset trim value for NMOS pairs
 0x40007F00 B  REGISTER IVREF_CTL: IVREF control register
 0x40007F00 C   FIELD 00w06 CSDT (rw): Current step data
 0x40007F00 C   FIELD 07w01 SCMOD (rw): Sink current mode
@@ -1700,10 +1442,6 @@
 0x40013020 C   FIELD 00w08 DIV: Dividing factor for the prescaler
 0x40013020 C   FIELD 08w01 OF: Odd factor for the prescaler
 0x40013020 C   FIELD 09w01 MCKOEN: I2S_MCK output enable
-0x40013080 B  REGISTER QCTL (rw): Quad wire control register
-0x40013080 C   FIELD 00w01 QMOD: Quad wire mode enable
-0x40013080 C   FIELD 01w01 QRD: Quad wire read select
-0x40013080 C   FIELD 02w01 IO23_DRV: Drive IO2 and IO3 enable
 0x40013800 A PERIPHERAL USART0
 0x40013800 B  REGISTER CTL0 (rw): Control register 0
 0x40013800 C   FIELD 00w01 UEN: USART enable
@@ -2315,7 +2053,6 @@
 0x40021010 C   FIELD 01w01 TIMER2RST: TIMER2 timer reset
 0x40021010 C   FIELD 04w01 TIMER5RST: TIMER5 timer reset
 0x40021010 C   FIELD 08w01 TIMER13RST: TIMER13 timer reset
-0x40021010 C   FIELD 09w01 SLCDRST: SLCD reset
 0x40021010 C   FIELD 11w01 WWDGTRST: Window watchdog timer reset
 0x40021010 C   FIELD 14w01 SPI1RST: SPI1 reset
 0x40021010 C   FIELD 15w01 SPI2RST: SPI2 reset
@@ -2323,12 +2060,9 @@
 0x40021010 C   FIELD 21w01 I2C0RST: I2C0 reset
 0x40021010 C   FIELD 22w01 I2C1RST: I2C1 reset
 0x40021010 C   FIELD 23w01 USBDRST: USBD reset
-0x40021010 C   FIELD 25w01 CAN0RST: CAN0 reset
-0x40021010 C   FIELD 26w01 CAN1RST: CAN1 reset
 0x40021010 C   FIELD 28w01 PMURST: Power control reset
 0x40021010 C   FIELD 29w01 DACRST: DAC reset
 0x40021010 C   FIELD 30w01 CECRST: HDMI CEC reset
-0x40021010 C   FIELD 31w01 OPAIVREFRST: OPA and IVREF reset
 0x40021014 B  REGISTER AHBEN (rw): AHB enable register (RCU_AHBEN)
 0x40021014 C   FIELD 00w01 DMAEN: DMA clock enable
 0x40021014 C   FIELD 02w01 SRAMEN: SRAM interface clock enable
@@ -2354,7 +2088,6 @@
 0x4002101C C   FIELD 01w01 TIMER2EN: TIMER2 timer clock enable
 0x4002101C C   FIELD 04w01 TIMER5EN: TIMER5 timer clock enable
 0x4002101C C   FIELD 08w01 TIMER13EN: TIMER13 timer clock enable
-0x4002101C C   FIELD 09w01 SLCDEN: SLCD clock enable
 0x4002101C C   FIELD 11w01 WWDGTEN: Window watchdog timer clock enable
 0x4002101C C   FIELD 14w01 SPI1EN: SPI1 clock enable
 0x4002101C C   FIELD 15w01 SPI2EN: SPI2 clock enable
@@ -2362,12 +2095,9 @@
 0x4002101C C   FIELD 21w01 I2C0EN: I2C0 clock enable
 0x4002101C C   FIELD 22w01 I2C1EN: I2C1 clock enable
 0x4002101C C   FIELD 23w01 USBDEN: USBD clock enable
-0x4002101C C   FIELD 25w01 CAN0EN: CAN0 clock enable
-0x4002101C C   FIELD 26w01 CAN1EN: CAN1 clock enable
 0x4002101C C   FIELD 28w01 PMUEN: Power interface clock enable
 0x4002101C C   FIELD 29w01 DACEN: DAC interface clock enable
 0x4002101C C   FIELD 30w01 CECEN: HDMI CEC interface clock enable
-0x4002101C C   FIELD 31w01 OPAIVREFEN: OPA and IVREF clock enable
 0x40021020 B  REGISTER BDCTL: Backup domain control register (RCU_BDCTL)
 0x40021020 C   FIELD 00w01 LXTALEN (rw): LXTAL enable
 0x40021020 C   FIELD 01w01 LXTALSTB (ro): External low-speed oscillator stabilization
@@ -2401,15 +2131,11 @@
 0x40021030 C   FIELD 00w02 USART0SEL: CK_USART0 clock source selection
 0x40021030 C   FIELD 06w01 CECSEL: CK_CEC clock source selection
 0x40021030 C   FIELD 08w01 ADCSEL: CK_ADC clock source selection
-0x40021030 C   FIELD 16w01 IRC28MDIV: CK_IRC28M divider 2 or not
 0x40021034 B  REGISTER CTL1: Control register 1
 0x40021034 C   FIELD 00w01 IRC14MEN (rw): IRC14M Internal 14M RC oscillator Enable
 0x40021034 C   FIELD 01w01 IRC14MSTB (ro): IRC14M Internal 14M RC Oscillator stabilization Flag
 0x40021034 C   FIELD 03w05 IRC14MADJ (rw): Internal 14M RC Oscillator clock trim adjust value
 0x40021034 C   FIELD 08w08 IRC14MCALIB (ro): Internal 14M RC Oscillator calibration value register
-0x40021080 B  REGISTER CFG3: Configuration register 4
-0x40021080 C   FIELD 00w03 CKOUT1SRC (rw): CKOUT1 Clock Source Selection
-0x40021080 C   FIELD 08w06 CKOUT1DIV (rw): The CK_OUT1 divider which the CK_OUT1 frequency can be reduced see bits 2:0 of RCU_CFG3 for CK_OUT1
 0x400210F8 B  REGISTER ADDEN: Additional enable register
 0x400210F8 C   FIELD 00w01 I2C2EN (rw): I2C2 unit clock enable
 0x400210FC B  REGISTER ADDRST: Additional reset register
@@ -3773,9 +3499,5 @@ INTERRUPT 032: I2C0_ER (I2C0): None
 INTERRUPT 034: I2C1_ER (I2C1): None
 INTERRUPT 035: I2C2_EV (I2C2): None
 INTERRUPT 036: I2C2_ER (I2C2): None
-INTERRUPT 037: USBD_LP (USBD): None
-INTERRUPT 038: USBD_HP (USBD): None
-INTERRUPT 042: USBD_WKUP (USBD): None
-INTERRUPT 047: SLCD (SLCD): None
 INTERRUPT 048: DMA_Channel5_6 (DMA): None
 INTERRUPT 051: SPI2 (SPI2): None
