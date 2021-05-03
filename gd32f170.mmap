@@ -52,7 +52,6 @@
 0x40000014 C   FIELD 03w01 CH2G: Channel 2 capture or compare event generation
 0x40000014 C   FIELD 04w01 CH3G: Channel 3 capture or compare event generation
 0x40000014 C   FIELD 06w01 TRGG: Trigger generation
-0x40000014 C   FIELD 07w01 BRKG: Break event generation
 0x40000018 B  REGISTER CHCTL0_Input (rw): Channel control register 0 (input mode)
 0x40000018 B  REGISTER CHCTL0_Output (rw): Channel control register 0 (output mode)
 0x40000018 C   FIELD 00w02 CH0MS: Channel 0 mode selection
@@ -177,7 +176,6 @@
 0x40000414 C   FIELD 03w01 CH2G: Channel 2 capture or compare event generation
 0x40000414 C   FIELD 04w01 CH3G: Channel 3 capture or compare event generation
 0x40000414 C   FIELD 06w01 TRGG: Trigger generation
-0x40000414 C   FIELD 07w01 BRKG: Break event generation
 0x40000418 B  REGISTER CHCTL0_Input (rw): Channel control register 0 (input mode)
 0x40000418 B  REGISTER CHCTL0_Output (rw): Channel control register 0 (output mode)
 0x40000418 C   FIELD 00w02 CH0MS: Channel 0 mode selection
@@ -5360,51 +5358,6 @@
 0x40007004 C   FIELD 02w01 LVDF (ro): Low Voltage Detector Status Flag
 0x40007004 C   FIELD 08w01 WUPEN0 (rw): Enable WKUP pin
 0x40007004 C   FIELD 09w01 WUPEN1 (rw): WKUPN1 Pin Enable
-0x40007400 A PERIPHERAL DAC
-0x40007400 B  REGISTER CTL (rw): control register
-0x40007400 C   FIELD 00w01 DEN0: DAC0 enable
-0x40007400 C   FIELD 01w01 DBOFF0: DAC0 output buffer turn off
-0x40007400 C   FIELD 02w01 DTEN0: DAC0 trigger enable
-0x40007400 C   FIELD 03w03 DTSEL0: DAC0 trigger selection
-0x40007400 C   FIELD 12w01 DDMAEN0: DAC0 DMA enable
-0x40007400 C   FIELD 13w01 DDUDRIE0: DAC0 DMA Underrun Interrupt enable
-0x40007400 C   FIELD 16w01 DEN1: DAC1 enable
-0x40007400 C   FIELD 17w01 DBOFF1: DAC1 output buffer turn off
-0x40007400 C   FIELD 18w01 DTEN1: DAC1 trigger enable
-0x40007400 C   FIELD 19w03 DTSEL1: DAC1 trigger selection
-0x40007400 C   FIELD 28w01 DDMAEN1: DAC1 DMA enable
-0x40007400 C   FIELD 29w01 DDUDRIE1: DAC1 DMA Underrun Interrupt enable
-0x40007404 B  REGISTER SWT (wo): software trigger register
-0x40007404 C   FIELD 00w01 SWTR0: DAC0 software trigger
-0x40007404 C   FIELD 01w01 SWTR1: DAC1 software trigger
-0x40007408 B  REGISTER DAC0_R12DH (rw): DAC0 12-bit right-aligned data holding register
-0x40007408 C   FIELD 00w12 DAC0_DH: DAC0 12-bit right-aligned data
-0x4000740C B  REGISTER DAC0_L12DH (rw): DAC0 12-bit left aligned data holding register
-0x4000740C C   FIELD 04w12 DAC0_DH: DAC0 12-bit left-aligned data
-0x40007410 B  REGISTER DAC0_R8DH (rw): DAC0 8-bit right aligned data holding register
-0x40007410 C   FIELD 00w08 DAC0_DH: DAC0 8-bit right-aligned data
-0x40007414 B  REGISTER DAC1_R12DH (rw): DAC1 12-bit right-aligned data holding register
-0x40007414 C   FIELD 00w12 DAC1_DH: DAC1 12-bit right-aligned data
-0x40007418 B  REGISTER DAC1_L12DH (rw): DAC1 12-bit left aligned data holding register
-0x40007418 C   FIELD 04w12 DAC1_DH: DAC1 12-bit left-aligned data
-0x4000741C B  REGISTER DAC1_R8DH (rw): DAC1 8-bit right aligned data holding register
-0x4000741C C   FIELD 00w08 DAC1_DH: DAC1 8-bit right-aligned data
-0x40007420 B  REGISTER DACC_R12DH (rw): DAC concurrent mode 12-bit right-aligned data holding register
-0x40007420 C   FIELD 00w12 DAC0_DH: DAC0 12-bit right-aligned data
-0x40007420 C   FIELD 16w12 DAC1_DH: DAC1 12-bit right-aligned data
-0x40007424 B  REGISTER DACC_L12DH (rw): DAC concurrent mode 12-bit left aligned data holding register
-0x40007424 C   FIELD 04w12 DAC0_DH: DAC0 12-bit left-aligned data
-0x40007424 C   FIELD 20w12 DAC1_DH: DAC1 12-bit left-aligned data
-0x40007428 B  REGISTER DACC_R8DH (rw): DAC concurrent mode 8-bit right aligned data holding register
-0x40007428 C   FIELD 00w08 DAC0_DH: DAC0 8-bit right-aligned data
-0x40007428 C   FIELD 08w08 DAC1_DH: DAC1 8-bit right-aligned data
-0x4000742C B  REGISTER DAC0_DO (ro): DAC0 data output register
-0x4000742C C   FIELD 00w12 DAC0_DO: DAC0 output data
-0x40007430 B  REGISTER DAC1_DO (ro): DAC1 data output register
-0x40007430 C   FIELD 00w12 DAC1_DO: DAC1 output data
-0x40007434 B  REGISTER STAT (rw): status register
-0x40007434 C   FIELD 13w01 DDUDR0: DAC0 DMA underrun flag
-0x40007434 C   FIELD 29w01 DDUDR1: DAC1 DMA underrun flag
 0x40007800 A PERIPHERAL CEC
 0x40007800 B  REGISTER CTL (rw): control register
 0x40007800 C   FIELD 00w01 CECEN: Enable/disable HDMI-CEC controller
