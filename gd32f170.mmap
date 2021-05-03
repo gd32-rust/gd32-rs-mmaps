@@ -122,7 +122,7 @@
 0x4000004C B  REGISTER DMATB (rw): DMA Transfer buffer register
 0x4000004C C   FIELD 00w16 DMATB: DMA transfer
 0x400000FC B  REGISTER CFG (rw): Configuration register
-0x400000FC C   FIELD 01w01 CCSEL: Configuration register
+0x400000FC C   FIELD 01w01 CHVSEL: Configuration register
 0x40000400 A PERIPHERAL TIMER2
 0x40000400 B  REGISTER CTL0 (rw): control register 0
 0x40000400 C   FIELD 00w01 CEN: Counter enable
@@ -247,7 +247,7 @@
 0x4000044C B  REGISTER DMATB (rw): DMA Transfer buffer register
 0x4000044C C   FIELD 00w16 DMATB: DMA transfer
 0x400004FC B  REGISTER CFG (rw): Configuration register
-0x400004FC C   FIELD 01w01 CCSEL: Configuration register
+0x400004FC C   FIELD 01w01 CHVSEL: Configuration register
 0x40001000 A PERIPHERAL TIMER5
 0x40001000 B  REGISTER CTL0 (rw): control register 0
 0x40001000 C   FIELD 00w01 CEN: Counter enable
@@ -312,7 +312,7 @@
 0x40002050 B  REGISTER IRMP (rw): Channel input remap register
 0x40002050 C   FIELD 00w02 CI0_RMP: Channel 0 input remap
 0x400020FC B  REGISTER CFG (rw): configuration register
-0x400020FC C   FIELD 01w01 CCSEL: Write Capture/Compare register selection
+0x400020FC C   FIELD 01w01 CHVSEL: Write Capture/Compare register selection
 0x40002400 A PERIPHERAL SLCD
 0x40002400 B  REGISTER CTL: Control register
 0x40002400 C   FIELD 00w01 SLCDON (rw): SLCD controller start
@@ -6051,7 +6051,7 @@
 0x40012C4C C   FIELD 00w16 DMATB: DMA transfer
 0x40012CFC B  REGISTER CFG (rw): Configuration register
 0x40012CFC C   FIELD 00w01 OUTSEL: The output value selection
-0x40012CFC C   FIELD 01w01 CCSEL: Write Capture/Compare register selection
+0x40012CFC C   FIELD 01w01 CHVSEL: Write Capture/Compare register selection
 0x40013000 A PERIPHERAL SPI0
 0x40013000 B  REGISTER CTL0 (rw): control register 0
 0x40013000 C   FIELD 00w01 CKPH: Clock Phase Selection
@@ -6326,7 +6326,7 @@
 0x4001404C C   FIELD 00w16 DMATB: DMA transfer
 0x400140FC B  REGISTER CFG (rw): configuration register
 0x400140FC C   FIELD 00w01 OUTSEL: The output value selection
-0x400140FC C   FIELD 01w01 CCSEL: Write Capture/Compare register selection
+0x400140FC C   FIELD 01w01 CHVSEL: Write Capture/Compare register selection
 0x40014400 A PERIPHERAL TIMER15
 0x40014400 B  REGISTER CTL0 (rw): control register 0
 0x40014400 C   FIELD 00w01 CEN: Counter enable
@@ -6400,7 +6400,7 @@
 0x4001444C C   FIELD 00w16 DMATB: DMA transfer
 0x400144FC B  REGISTER CFG (rw): configuration register
 0x400144FC C   FIELD 00w01 OUTSEL: The output value selection
-0x400144FC C   FIELD 01w01 CCSEL: Write Capture/Compare register selection
+0x400144FC C   FIELD 01w01 CHVSEL: Write Capture/Compare register selection
 0x40014800 A PERIPHERAL TIMER16
 0x40014800 B  REGISTER CTL0 (rw): control register 0
 0x40014800 C   FIELD 00w01 CEN: Counter enable
@@ -6474,7 +6474,7 @@
 0x4001484C C   FIELD 00w16 DMATB: DMA transfer
 0x400148FC B  REGISTER CFG (rw): configuration register
 0x400148FC C   FIELD 00w01 OUTSEL: The output value selection
-0x400148FC C   FIELD 01w01 CCSEL: Write Capture/Compare register selection
+0x400148FC C   FIELD 01w01 CHVSEL: Write Capture/Compare register selection
 0x40020000 A PERIPHERAL DMA
 0x40020000 B  REGISTER INTF (ro): DMA interrupt flag register (DMA_INTF)
 0x40020000 C   FIELD 00w01 GIF0: Global interrupt flag of channel 0
