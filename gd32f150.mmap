@@ -305,50 +305,6 @@
 0x40002034 C   FIELD 00w16 CH0VAL: Capture or compare value of channel 0
 0x40002050 B  REGISTER IRMP (rw): Channel input remap register
 0x40002050 C   FIELD 00w02 CI0_RMP: Channel 0 input remap
-0x40002400 A PERIPHERAL SLCD
-0x40002400 B  REGISTER CTL: Control register
-0x40002400 C   FIELD 00w01 SLCDON (rw): SLCD controller start
-0x40002400 C   FIELD 01w01 VSRC (rw): SLCD voltage source
-0x40002400 C   FIELD 02w03 DUTY (rw): Duty select
-0x40002400 C   FIELD 05w02 BIAS (rw): Bias select
-0x40002400 C   FIELD 07w01 COMS (rw): Common/segment padselect
-0x40002404 B  REGISTER CFG: SLCD configuration register
-0x40002404 C   FIELD 00w01 HDEN (rw): High drive enable
-0x40002404 C   FIELD 01w01 SOFIE (rw): Start of frame interrupt enable
-0x40002404 C   FIELD 03w01 UPDIE (rw): SLCD update done interrupt enable
-0x40002404 C   FIELD 04w03 PULSE (rw): Pulse on duration
-0x40002404 C   FIELD 07w03 DTD (rw): Dead time duration
-0x40002404 C   FIELD 10w03 CONR (rw): Contrast ratio
-0x40002404 C   FIELD 13w03 BLKDIV (rw): Blink frequency divider
-0x40002404 C   FIELD 16w02 BLKMOD (rw): Blink mode
-0x40002404 C   FIELD 18w04 DIV (rw): SLCD clock divider
-0x40002404 C   FIELD 22w04 PSC (rw): SLCD clock prescaler
-0x40002408 B  REGISTER STAT: SLCD status flag register
-0x40002408 C   FIELD 00w01 ONF (ro): SLCD controller on flag
-0x40002408 C   FIELD 01w01 SOF (ro): Start of frame flag
-0x40002408 C   FIELD 02w01 UPRF (rw): Update SLCD data request flag
-0x40002408 C   FIELD 03w01 UPDF (ro): Update SLCD data done flag
-0x40002408 C   FIELD 04w01 VRDYF (ro): SLCD voltage ready flag
-0x40002408 C   FIELD 05w01 SYNF (ro): SLCD_CFG register synchronization flag
-0x4000240C B  REGISTER STATC: SLCD status flag clear register
-0x4000240C C   FIELD 01w01 SOFC (rw): Start of frame flag clear
-0x4000240C C   FIELD 03w01 UPDC (rw): SLCD data update done clear bit
-0x40002414 B  REGISTER DATA0: SLCD display data register
-0x40002414 C   FIELD 00w32 SEG_DATA0 (rw): Each bit corresponds to one segment to display
-0x4000241C B  REGISTER DATA1: SLCD display data register
-0x4000241C C   FIELD 00w32 SEG_DATA1 (rw): Each bit corresponds to one segment to display
-0x40002424 B  REGISTER DATA2: SLCD display data register
-0x40002424 C   FIELD 00w32 SEG_DATA2 (rw): Each bit corresponds to one segment to display
-0x4000242C B  REGISTER DATA3: SLCD display data register
-0x4000242C C   FIELD 00w32 SEG_DATA3 (rw): Each bit corresponds to one segment to display
-0x40002434 B  REGISTER DATA4: SLCD display data register
-0x40002434 C   FIELD 00w32 SEG_DATA4 (rw): Each bit corresponds to one segment to display
-0x4000243C B  REGISTER DATA5: SLCD display data register
-0x4000243C C   FIELD 00w32 SEG_DATA5 (rw): Each bit corresponds to one segment to display
-0x40002444 B  REGISTER DATA6: SLCD display data register
-0x40002444 C   FIELD 00w32 SEG_DATA6 (rw): Each bit corresponds to one segment to display
-0x4000244C B  REGISTER DATA7: SLCD display data register
-0x4000244C C   FIELD 00w32 SEG_DATA7 (rw): Each bit corresponds to one segment to display
 0x40002800 A PERIPHERAL RTC
 0x40002800 B  REGISTER TIME (rw): Time of day register
 0x40002800 C   FIELD 00w04 SCU: Second units in BCD format
@@ -1090,51 +1046,6 @@
 0x40007814 C   FIELD 11w01 TERRIE: TERR Interrupt Enable
 0x40007814 C   FIELD 12w01 TAERRIE: TAERR Interrupt Enable
 0x40007C00 A PERIPHERAL OPA_IVREF
-0x40007C5C B  REGISTER OPA_CTL: OPA control register
-0x40007C5C C   FIELD 00w01 OPA0PD (rw): OPA0 power down
-0x40007C5C C   FIELD 01w01 T3OPA0 (rw): T3 switch enable for OPA0
-0x40007C5C C   FIELD 02w01 S1OPA0 (rw): S1 switch enable for OPA0
-0x40007C5C C   FIELD 03w01 S2OPA0 (rw): S2 switch enable for OPA0
-0x40007C5C C   FIELD 04w01 S3OPA0 (rw): S3 switch enable for OPA0
-0x40007C5C C   FIELD 05w01 OPA0CAL_L (rw): OPA0 offset calibration for P diff
-0x40007C5C C   FIELD 06w01 OPA0CAL_H (rw): OPA0 offset calibration for N diff
-0x40007C5C C   FIELD 07w01 OPA0LPM (rw): OPA0 low power mode
-0x40007C5C C   FIELD 08w01 OPA1PD (rw): OPA1 power down
-0x40007C5C C   FIELD 09w01 T3OPA1 (rw): T3 switch enable for OPA1
-0x40007C5C C   FIELD 10w01 S1OPA1 (rw): S1 switch enable for OPA1
-0x40007C5C C   FIELD 11w01 S2OPA1 (rw): S2 switch enable for OPA1
-0x40007C5C C   FIELD 12w01 S3OPA1 (rw): S3 switch enable for OPA1
-0x40007C5C C   FIELD 13w01 OPA1CAL_L (rw): OPA1 offset calibration for P diff
-0x40007C5C C   FIELD 14w01 OPA1CAL_H (rw): OPA1 offset calibration for N diff
-0x40007C5C C   FIELD 15w01 OPA1LPM (rw): OPA1 low power mode
-0x40007C5C C   FIELD 16w01 OPA2PD (rw): OPA2 power down
-0x40007C5C C   FIELD 17w01 T3OPA2 (rw): T3 switch enable for OPA2
-0x40007C5C C   FIELD 18w01 S1OPA2 (rw): S1 switch enable for OPA2
-0x40007C5C C   FIELD 19w01 S2OPA2 (rw): S2 switch enable for OPA2
-0x40007C5C C   FIELD 20w01 S3OPA2 (rw): S3 switch enable for OPA2
-0x40007C5C C   FIELD 21w01 OPA2CAL_L (rw): OPA2 offset calibration for P diff
-0x40007C5C C   FIELD 22w01 OPA2CAL_H (rw): OPA2 offset calibration for N diff
-0x40007C5C C   FIELD 23w01 OPA2LPM (rw): OPA2 low power mode
-0x40007C5C C   FIELD 27w01 S4OPA1 (rw): S4 switch enable for OPA1
-0x40007C5C C   FIELD 28w01 OPA_RANGE (rw): Power supply range
-0x40007C5C C   FIELD 29w01 OPA0CALOUT (rw): OPA0 calibration output
-0x40007C5C C   FIELD 30w01 OPA1CALOUT (rw): OPA1 calibration output
-0x40007C5C C   FIELD 31w01 OPA2CALOUT (rw): OPA2 calibration output
-0x40007C60 B  REGISTER OPA_BT: OPA offset trimming for normal mode register
-0x40007C60 C   FIELD 00w05 OA0_TRIM_LOW (rw): OPA0, normal mode 5-bit offset trim value for PMOS pairs
-0x40007C60 C   FIELD 05w05 OA0_TRIM_HIGH (rw): OPA0, normal mode 5-bit offset trim value for NMOS pairs
-0x40007C60 C   FIELD 10w05 OA1_TRIM_LOW (rw): OPA1, normal mode 5-bit offset trim value for PMOS pairs
-0x40007C60 C   FIELD 15w05 OA1_TRIM_HIGH (rw): OPA1, normal mode 5-bit offset trim value for NMOS pairs
-0x40007C60 C   FIELD 20w05 OA2_TRIM_LOW (rw): OPA2, normal mode 5-bit offset trim value for PMOS pairs
-0x40007C60 C   FIELD 25w05 OA2_TRIM_HIGH (rw): OPA2, normal mode 5-bit offset trim value for NMOS pairs
-0x40007C60 C   FIELD 31w01 OT_USER (rw): user programmed trimming value
-0x40007C64 B  REGISTER OPA_LPBT: OPA offset trimming for low power mode register
-0x40007C64 C   FIELD 00w05 OA0_TRIM_LP_LOW (rw): OPA0, low power mode 5-bit offset trim value for PMOS pairs
-0x40007C64 C   FIELD 05w05 OA0_TRIM_LP_HIGH (rw): OPA0, low power mode 5-bit offset trim value for NMOS pairs
-0x40007C64 C   FIELD 10w05 OA1_TRIM_LP_LOW (rw): OPA1, low power mode 5-bit offset trim value for PMOS pairs
-0x40007C64 C   FIELD 15w05 OA1_TRIM_LP_HIGH (rw): OPA1, low power mode 5-bit offset trim value for NMOS pairs
-0x40007C64 C   FIELD 20w05 OA2_TRIM_LP_LOW (rw): OPA2, low power mode 5-bit offset trim value for PMOS pairs
-0x40007C64 C   FIELD 25w05 OA2_TRIM_LP_HIGH (rw): OPA2, low power mode 5-bit offset trim value for NMOS pairs
 0x40007F00 B  REGISTER IVREF_CTL: IVREF control register
 0x40007F00 C   FIELD 00w06 CSDT (rw): Current step data
 0x40007F00 C   FIELD 07w01 SCMOD (rw): Sink current mode
@@ -3796,6 +3707,5 @@ INTERRUPT 036: I2C2_ER (I2C2): None
 INTERRUPT 037: USBD_LP (USBD): None
 INTERRUPT 038: USBD_HP (USBD): None
 INTERRUPT 042: USBD_WKUP (USBD): None
-INTERRUPT 047: SLCD (SLCD): None
 INTERRUPT 048: DMA_Channel5_6 (DMA): None
 INTERRUPT 051: SPI2 (SPI2): None
