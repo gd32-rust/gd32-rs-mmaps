@@ -312,7 +312,7 @@
 0x40002050 B  REGISTER IRMP (rw): Channel input remap register
 0x40002050 C   FIELD 00w02 CI0_RMP: Channel 0 input remap
 0x400020FC B  REGISTER CFG (rw): configuration register
-0x400020FC C   FIELD 01w01 CCSEL: Write Capture/Compare register selection
+0x400020FC C   FIELD 01w01 CHVSEL: Write Capture/Compare register selection
 0x40002400 A PERIPHERAL SLCD
 0x40002400 B  REGISTER CTL: Control register
 0x40002400 C   FIELD 00w01 SLCDON (rw): SLCD controller start
