@@ -106,7 +106,7 @@
 0x40000428 B  REGISTER PSC (rw): prescaler
 0x40000428 C   FIELD 00w16 PSC: Prescaler value
 0x4000042C B  REGISTER CAR (rw): auto-reload register
-0x4000042C C   FIELD 00w16 CARL: Low Auto-reload value
+0x4000042C C   FIELD 00w16 CAR: Low Auto-reload value
 0x40000434 B  REGISTER CH0CV (rw): capture/compare register 1
 0x40000434 C   FIELD 00w16 CH0VAL: Low Capture/Compare 1 value
 0x40000438 B  REGISTER CH1CV (rw): capture/compare register 2
@@ -143,7 +143,7 @@
 0x40001028 B  REGISTER PSC (rw): prescaler
 0x40001028 C   FIELD 00w16 PSC: Prescaler value
 0x4000102C B  REGISTER CAR (rw): auto-reload register
-0x4000102C C   FIELD 00w16 CARL: Low Auto-reload value
+0x4000102C C   FIELD 00w16 CAR: Low Auto-reload value
 0x40002000 A PERIPHERAL TIMER13
 0x40002000 B  REGISTER CTL0 (rw): control register 1
 0x40002000 C   FIELD 00w01 CEN: Counter enable
@@ -179,7 +179,7 @@
 0x40002028 B  REGISTER PSC (rw): prescaler
 0x40002028 C   FIELD 00w16 PSC: Prescaler value
 0x4000202C B  REGISTER CAR (rw): auto-reload register
-0x4000202C C   FIELD 00w16 CARL: Auto-reload value
+0x4000202C C   FIELD 00w16 CAR: Auto-reload value
 0x40002034 B  REGISTER CH0CV (rw): capture/compare register 0
 0x40002034 C   FIELD 00w16 CH0VAL: Capture/Compare 1 value
 0x40002050 B  REGISTER IRMP (rw): channel input remap register
@@ -357,7 +357,7 @@
 0x40003808 C   FIELD 11w02 TXLVL (ro): Tx FIFO level
 0x4000380C B  REGISTER DATA (rw): data register
 0x4000380C C   FIELD 00w16 DATA: Data register
-0x40003810 B  REGISTER CPCPOLY (rw): CRC polynomial register
+0x40003810 B  REGISTER CRCPOLY (rw): CRC polynomial register
 0x40003810 C   FIELD 00w16 CRCPOLY: CRC polynomial register
 0x40003814 B  REGISTER RCRC (ro): RX CRC register
 0x40003814 C   FIELD 00w16 RCRC: RX RCR register
@@ -442,8 +442,8 @@
 0x40004408 C   FIELD 20w02 WUM: Wakeup from Stop mode interrupt flag selection
 0x40004408 C   FIELD 22w01 WUIE: Wakeup from Stop mode interrupt enable
 0x4000440C B  REGISTER BAUD (rw): Baud rate register
-0x4000440C C   FIELD 00w04 BRR_FRA: integer of baud-rate divider
-0x4000440C C   FIELD 04w12 BRR_INT: integer of baud-rate divider
+0x4000440C C   FIELD 00w04 FRADIV: integer of baud-rate divider
+0x4000440C C   FIELD 04w12 INTDIV: integer of baud-rate divider
 0x40004410 B  REGISTER GP (rw): Guard time and prescaler register
 0x40004410 C   FIELD 00w08 PSC: Prescaler value
 0x40004410 C   FIELD 08w08 GUAT: Guard time value
@@ -1094,7 +1094,7 @@
 0x40012C28 B  REGISTER PSC (rw): prescaler
 0x40012C28 C   FIELD 00w16 PSC: Prescaler value
 0x40012C2C B  REGISTER CAR (rw): auto-reload register
-0x40012C2C C   FIELD 00w16 CARL: Counter auto reload value
+0x40012C2C C   FIELD 00w16 CAR: Counter auto reload value
 0x40012C30 B  REGISTER CREP (rw): repetition counter register
 0x40012C30 C   FIELD 00w08 CREP: Repetition counter value
 0x40012C34 B  REGISTER CH0CV (rw): capture/compare register 0
@@ -1159,7 +1159,7 @@
 0x40013008 C   FIELD 08w01 FERR (rw): Format Error
 0x4001300C B  REGISTER DATA (rw): data register
 0x4001300C C   FIELD 00w16 DATA: Data register
-0x40013010 B  REGISTER CPCPOLY (rw): CRC polynomial register
+0x40013010 B  REGISTER CRCPOLY (rw): CRC polynomial register
 0x40013010 C   FIELD 00w16 CRCPOLY: CRC polynomial register
 0x40013014 B  REGISTER RCRC (ro): RX CRC register
 0x40013014 C   FIELD 00w16 RCRC: RX RCR register
@@ -1240,8 +1240,8 @@
 0x40013808 C   FIELD 20w02 WUM: Wakeup from Stop mode interrupt flag selection
 0x40013808 C   FIELD 22w01 WUIE: Wakeup from Stop mode interrupt enable
 0x4001380C B  REGISTER BAUD (rw): Baud rate register
-0x4001380C C   FIELD 00w04 BRR_FRA: integer of baud-rate divider
-0x4001380C C   FIELD 04w12 BRR_INT: integer of baud-rate divider
+0x4001380C C   FIELD 00w04 FRADIV: integer of baud-rate divider
+0x4001380C C   FIELD 04w12 INTDIV: integer of baud-rate divider
 0x40013810 B  REGISTER GP (rw): Guard time and prescaler register
 0x40013810 C   FIELD 00w08 PSC: Prescaler value
 0x40013810 C   FIELD 08w08 GUAT: Guard time value
@@ -1382,7 +1382,7 @@
 0x40014028 B  REGISTER PSC (rw): prescaler
 0x40014028 C   FIELD 00w16 PSC: Prescaler value
 0x4001402C B  REGISTER CAR (rw): auto-reload register
-0x4001402C C   FIELD 00w16 CARL: Auto-reload value
+0x4001402C C   FIELD 00w16 CAR: Auto-reload value
 0x40014030 B  REGISTER CREP (rw): repetition counter register
 0x40014030 C   FIELD 00w08 CREP: Repetition counter value
 0x40014034 B  REGISTER CH0CV (rw): capture/compare register 0
@@ -1457,7 +1457,7 @@
 0x40014428 B  REGISTER PSC (rw): prescaler
 0x40014428 C   FIELD 00w16 PSC: Prescaler value
 0x4001442C B  REGISTER CAR (rw): auto-reload register
-0x4001442C C   FIELD 00w16 CARL: Auto-reload value
+0x4001442C C   FIELD 00w16 CAR: Auto-reload value
 0x40014430 B  REGISTER CREP (rw): repetition counter register
 0x40014430 C   FIELD 00w08 CREP: Repetition counter value
 0x40014434 B  REGISTER CH0CV (rw): capture/compare register 0
@@ -1530,7 +1530,7 @@
 0x40014828 B  REGISTER PSC (rw): prescaler
 0x40014828 C   FIELD 00w16 PSC: Prescaler value
 0x4001482C B  REGISTER CAR (rw): auto-reload register
-0x4001482C C   FIELD 00w16 CARL: Auto-reload value
+0x4001482C C   FIELD 00w16 CAR: Auto-reload value
 0x40014830 B  REGISTER CREP (rw): repetition counter register
 0x40014830 C   FIELD 00w08 CREP: Repetition counter value
 0x40014834 B  REGISTER CH0CV (rw): capture/compare register 0
@@ -1878,10 +1878,10 @@
 0x4002201C B  REGISTER OBSTAT (ro): Option byte control register
 0x4002201C C   FIELD 00w01 OBERR: Option bytes read error bit
 0x4002201C C   FIELD 01w02 PLEVEL: Option bytes security protection level
-0x4002201C C   FIELD 08w08 USER: Store USER of option bytes block after system reset
-0x4002201C C   FIELD 16w16 DATA: Store DATA[15:0] of option bytes block after system reset
+0x4002201C C   FIELD 08w08 OB_USER: Store USER of option bytes block after system reset
+0x4002201C C   FIELD 16w16 OB_DATA: Store DATA[15:0] of option bytes block after system reset
 0x40022020 B  REGISTER WP (ro): Erase/Program Protection register
-0x40022020 C   FIELD 00w16 WP: Store WP[15:0] of option bytes block after system reset
+0x40022020 C   FIELD 00w16 OB_WP: Store WP[15:0] of option bytes block after system reset
 0x40022100 B  REGISTER PID (ro): Product ID register
 0x40022100 C   FIELD 00w32 PID: Product reserved ID code register
 0x40023000 A PERIPHERAL CRC
