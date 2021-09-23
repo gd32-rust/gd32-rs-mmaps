@@ -717,7 +717,7 @@
 0x40005414 C   FIELD 11w01 OUERR (rw): Over-run or under-run situation occurs in slave mode
 0x40005414 C   FIELD 12w01 PECERR (rw): PEC error when receiving data
 0x40005414 C   FIELD 14w01 SMBTO (rw): Timeout signal in SMBus mode
-0x40005414 C   FIELD 15w01 SMBALTS (rw): SMBus Alert status
+0x40005414 C   FIELD 15w01 SMBALT (rw): SMBus Alert status
 0x40005418 B  REGISTER STAT1 (ro): Transfer status register 1
 0x40005418 C   FIELD 00w01 MASTER: A flag indicating whether I2C block is in master or slave mode
 0x40005418 C   FIELD 01w01 I2CBSY: Busy flag
@@ -778,7 +778,7 @@
 0x40005814 C   FIELD 11w01 OUERR (rw): Over-run or under-run situation occurs in slave mode
 0x40005814 C   FIELD 12w01 PECERR (rw): PEC error when receiving data
 0x40005814 C   FIELD 14w01 SMBTO (rw): Timeout signal in SMBus mode
-0x40005814 C   FIELD 15w01 SMBALTS (rw): SMBus Alert status
+0x40005814 C   FIELD 15w01 SMBALT (rw): SMBus Alert status
 0x40005818 B  REGISTER STAT1 (ro): Transfer status register 1
 0x40005818 C   FIELD 00w01 MASTER: A flag indicating whether I2C block is in master or slave mode
 0x40005818 C   FIELD 01w01 I2CBSY: Busy flag
@@ -1092,7 +1092,7 @@
 0x4000C014 C   FIELD 11w01 OUERR (rw): Over-run or under-run situation occurs in slave mode
 0x4000C014 C   FIELD 12w01 PECERR (rw): PEC error when receiving data
 0x4000C014 C   FIELD 14w01 SMBTO (rw): Timeout signal in SMBus mode
-0x4000C014 C   FIELD 15w01 SMBALTS (rw): SMBus Alert status
+0x4000C014 C   FIELD 15w01 SMBALT (rw): SMBus Alert status
 0x4000C018 B  REGISTER STAT1 (ro): Transfer status register 1
 0x4000C018 C   FIELD 00w01 MASTER: A flag indicating whether I2C block is in master or slave mode
 0x4000C018 C   FIELD 01w01 I2CBSY: Busy flag
