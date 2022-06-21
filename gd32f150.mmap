@@ -1985,65 +1985,65 @@
 0x40020000 C   FIELD 00w01 GIF0: Global interrupt flag of channel 0
 0x40020000 C   FIELD 01w01 FTFIF0: Full transfer finish flag of channel 0
 0x40020000 C   FIELD 02w01 HTFIF0: Half transfer finish flag of channel 0
-0x40020000 C   FIELD 03w01 TAEIF0: Transfer access error flag of channel 0
+0x40020000 C   FIELD 03w01 ERRIF0: Transfer access error flag of channel 0
 0x40020000 C   FIELD 04w01 GIF1: Global interrupt flag of channel 1
 0x40020000 C   FIELD 05w01 FTFIF1: Full transfer finish flag of channel 1
 0x40020000 C   FIELD 06w01 HTFIF1: Half transfer finish flag of channel 1
-0x40020000 C   FIELD 07w01 TAEIF1: Transfer access error flag of channel 1
+0x40020000 C   FIELD 07w01 ERRIF1: Transfer access error flag of channel 1
 0x40020000 C   FIELD 08w01 GIF2: Global interrupt flag of channel 2
 0x40020000 C   FIELD 09w01 FTFIF2: Full transfer finish flag of channel 2
 0x40020000 C   FIELD 10w01 HTFIF2: Half transfer finish flag of channel 2
-0x40020000 C   FIELD 11w01 TAEIF2: Transfer access error flag of channel 2
+0x40020000 C   FIELD 11w01 ERRIF2: Transfer access error flag of channel 2
 0x40020000 C   FIELD 12w01 GIF3: Global interrupt flag of channel 3
 0x40020000 C   FIELD 13w01 FTFIF3: Full transfer finish flag of channel 3
 0x40020000 C   FIELD 14w01 HTFIF3: Half transfer finish flag of channel 3
-0x40020000 C   FIELD 15w01 TAEIF3: Transfer access error flag of channel 3
+0x40020000 C   FIELD 15w01 ERRIF3: Transfer access error flag of channel 3
 0x40020000 C   FIELD 16w01 GIF4: Global interrupt flag of channel 4
 0x40020000 C   FIELD 17w01 FTFIF4: Full transfer finish flag of channel 4
 0x40020000 C   FIELD 18w01 HTFIF4: Half transfer finish flag of channel 4
-0x40020000 C   FIELD 19w01 TAEIF4: Transfer access error flag of channel 4
+0x40020000 C   FIELD 19w01 ERRIF4: Transfer access error flag of channel 4
 0x40020000 C   FIELD 20w01 GIF5: Global interrupt flag of channel 5
 0x40020000 C   FIELD 21w01 FTFIF5: Full transfer finish flag of channel 5
 0x40020000 C   FIELD 22w01 HTFIF5: Half transfer finish flag of channel 5
-0x40020000 C   FIELD 23w01 TAEIF5: Transfer access error flag of channel 5
+0x40020000 C   FIELD 23w01 ERRIF5: Transfer access error flag of channel 5
 0x40020000 C   FIELD 24w01 GIF6: Global interrupt flag of channel 6
 0x40020000 C   FIELD 25w01 FTFIF6: Full transfer finish flag of channel 6
 0x40020000 C   FIELD 26w01 HTFIF6: Half transfer finish flag of channel 6
-0x40020000 C   FIELD 27w01 TAEIF6: Transfer access error flag of channel 6
+0x40020000 C   FIELD 27w01 ERRIF6: Transfer access error flag of channel 6
 0x40020004 B  REGISTER INTC (wo): DMA interrupt flag clear register (DMA_INTC)
-0x40020004 C   FIELD 00w01 GIC0: Clear global interrupt flag of channel 0
+0x40020004 C   FIELD 00w01 GIFC0: Clear global interrupt flag of channel 0
 0x40020004 C   FIELD 01w01 FTFIFC0: Clear bit for Full transfer finish flag of channel 0
 0x40020004 C   FIELD 02w01 HTFIFC0: Clear bit for half transfer finish flag of channel 0
-0x40020004 C   FIELD 03w01 TAEIFC0: Clear bit for transfer access error flag of channel 0
-0x40020004 C   FIELD 04w01 GIC1: Clear global interrupt flag of channel 1
+0x40020004 C   FIELD 03w01 ERRIFC0: Clear bit for transfer access error flag of channel 0
+0x40020004 C   FIELD 04w01 GIFC1: Clear global interrupt flag of channel 1
 0x40020004 C   FIELD 05w01 FTFIFC1: Clear bit for Full transfer finish flag of channel 1
 0x40020004 C   FIELD 06w01 HTFIFC1: Clear bit for half transfer finish flag of channel 1
-0x40020004 C   FIELD 07w01 TAEIFC1: Clear bit for transfer access error flag of channel 1
-0x40020004 C   FIELD 08w01 GIC2: Clear global interrupt flag of channel 2
+0x40020004 C   FIELD 07w01 ERRIFC1: Clear bit for transfer access error flag of channel 1
+0x40020004 C   FIELD 08w01 GIFC2: Clear global interrupt flag of channel 2
 0x40020004 C   FIELD 09w01 FTFIFC2: Clear bit for Full transfer finish flag of channel 2
 0x40020004 C   FIELD 10w01 HTFIFC2: Clear bit for half transfer finish flag of channel 2
-0x40020004 C   FIELD 11w01 TAEIFC2: Clear bit for transfer access error flag of channel 2
-0x40020004 C   FIELD 12w01 GIC3: Clear global interrupt flag of channel 3
+0x40020004 C   FIELD 11w01 ERRIFC2: Clear bit for transfer access error flag of channel 2
+0x40020004 C   FIELD 12w01 GIFC3: Clear global interrupt flag of channel 3
 0x40020004 C   FIELD 13w01 FTFIFC3: Clear bit for Full transfer finish flag of channel 3
 0x40020004 C   FIELD 14w01 HTFIFC3: Clear bit for half transfer finish flag of channel 3
-0x40020004 C   FIELD 15w01 TAEIFC3: Clear bit for transfer access error flag of channel 3
-0x40020004 C   FIELD 16w01 GIC4: Clear global interrupt flag of channel 4
+0x40020004 C   FIELD 15w01 ERRIFC3: Clear bit for transfer access error flag of channel 3
+0x40020004 C   FIELD 16w01 GIFC4: Clear global interrupt flag of channel 4
 0x40020004 C   FIELD 17w01 FTFIFC4: Clear bit for Full transfer finish flag of channel 4
 0x40020004 C   FIELD 18w01 HTFIFC4: Clear bit for half transfer finish flag of channel 4
-0x40020004 C   FIELD 19w01 TAEIFC4: Clear bit for transfer access error flag of channel 4
-0x40020004 C   FIELD 20w01 GIC5: Clear global interrupt flag of channel 5
+0x40020004 C   FIELD 19w01 ERRIFC4: Clear bit for transfer access error flag of channel 4
+0x40020004 C   FIELD 20w01 GIFC5: Clear global interrupt flag of channel 5
 0x40020004 C   FIELD 21w01 FTFIFC5: Clear bit for Full transfer finish flag of channel 5
 0x40020004 C   FIELD 22w01 HTFIFC5: Clear bit for half transfer finish flag of channel 5
-0x40020004 C   FIELD 23w01 TAEIFC5: Clear bit for transfer access error flag of channel 5
-0x40020004 C   FIELD 24w01 GIC6: Clear global interrupt flag of channel 6
+0x40020004 C   FIELD 23w01 ERRIFC5: Clear bit for transfer access error flag of channel 5
+0x40020004 C   FIELD 24w01 GIFC6: Clear global interrupt flag of channel 6
 0x40020004 C   FIELD 25w01 FTFIFC6: Clear bit for Full transfer finish flag of channel 6
 0x40020004 C   FIELD 26w01 HTFIFC6: Clear bit for half transfer finish flag of channel 6
-0x40020004 C   FIELD 27w01 TAEIFC6: Clear bit for transfer access error flag of channel 6
-0x40020008 B  REGISTER CH0CTL0 (rw): DMA channel configuration register (DMA_CH0CTL0)
+0x40020004 C   FIELD 27w01 ERRIFC6: Clear bit for transfer access error flag of channel 6
+0x40020008 B  REGISTER CH0CTL (rw): DMA channel configuration register (DMA_CH0CTL0)
 0x40020008 C   FIELD 00w01 CHEN: Channel enable
 0x40020008 C   FIELD 01w01 FTFIE: Enable bit for full transfer finish interrupt
 0x40020008 C   FIELD 02w01 HTFIE: Enable bit for half transfer finish interrupt
-0x40020008 C   FIELD 03w01 TAEIE: Enable bit for tranfer access error interrupt
+0x40020008 C   FIELD 03w01 ERRIE: Enable bit for tranfer access error interrupt
 0x40020008 C   FIELD 04w01 DIR: Transfer mode
 0x40020008 C   FIELD 05w01 CMEN: Circular mode enable
 0x40020008 C   FIELD 06w01 PNAGA: Next address generation algorithm of peripheral
@@ -2058,11 +2058,11 @@
 0x40020010 C   FIELD 00w32 PADDR: Peripheral base address
 0x40020014 B  REGISTER CH0MADDR (rw): DMA channel 0 memory base address register
 0x40020014 C   FIELD 00w32 MADDR: Memory base address
-0x4002001C B  REGISTER CH1CTL0 (rw): DMA channel configuration register (DMA_CH1CTL0)
+0x4002001C B  REGISTER CH1CTL (rw): DMA channel configuration register (DMA_CH1CTL0)
 0x4002001C C   FIELD 00w01 CHEN: Channel enable
 0x4002001C C   FIELD 01w01 FTFIE: Enable bit for full transfer finish interrupt
 0x4002001C C   FIELD 02w01 HTFIE: Enable bit for half transfer finish interrupt
-0x4002001C C   FIELD 03w01 TAEIE: Enable bit for tranfer access error interrupt
+0x4002001C C   FIELD 03w01 ERRIE: Enable bit for tranfer access error interrupt
 0x4002001C C   FIELD 04w01 DIR: Transfer mode
 0x4002001C C   FIELD 05w01 CMEN: Circular mode enable
 0x4002001C C   FIELD 06w01 PNAGA: Next address generation algorithm of peripheral
@@ -2077,11 +2077,11 @@
 0x40020024 C   FIELD 00w32 PADDR: Peripheral base address
 0x40020028 B  REGISTER CH1MADDR (rw): DMA channel 1 memory base address register
 0x40020028 C   FIELD 00w32 MADDR: Memory base address
-0x40020030 B  REGISTER CH2CTL0 (rw): DMA channel configuration register (DMA_CH2CTL0)
+0x40020030 B  REGISTER CH2CTL (rw): DMA channel configuration register (DMA_CH2CTL0)
 0x40020030 C   FIELD 00w01 CHEN: Channel enable
 0x40020030 C   FIELD 01w01 FTFIE: Enable bit for full transfer finish interrupt
 0x40020030 C   FIELD 02w01 HTFIE: Enable bit for half transfer finish interrupt
-0x40020030 C   FIELD 03w01 TAEIE: Enable bit for tranfer access error interrupt
+0x40020030 C   FIELD 03w01 ERRIE: Enable bit for tranfer access error interrupt
 0x40020030 C   FIELD 04w01 DIR: Transfer mode
 0x40020030 C   FIELD 05w01 CMEN: Circular mode enable
 0x40020030 C   FIELD 06w01 PNAGA: Next address generation algorithm of peripheral
@@ -2096,11 +2096,11 @@
 0x40020038 C   FIELD 00w32 PADDR: Peripheral base address
 0x4002003C B  REGISTER CH2MADDR (rw): DMA channel 2 memory base address register
 0x4002003C C   FIELD 00w32 MADDR: Memory base address
-0x40020044 B  REGISTER CH3CTL0 (rw): DMA channel configuration register (DMA_CH3CTL0)
+0x40020044 B  REGISTER CH3CTL (rw): DMA channel configuration register (DMA_CH3CTL0)
 0x40020044 C   FIELD 00w01 CHEN: Channel enable
 0x40020044 C   FIELD 01w01 FTFIE: Enable bit for full transfer finish interrupt
 0x40020044 C   FIELD 02w01 HTFIE: Enable bit for half transfer finish interrupt
-0x40020044 C   FIELD 03w01 TAEIE: Enable bit for tranfer access error interrupt
+0x40020044 C   FIELD 03w01 ERRIE: Enable bit for tranfer access error interrupt
 0x40020044 C   FIELD 04w01 DIR: Transfer mode
 0x40020044 C   FIELD 05w01 CMEN: Circular mode enable
 0x40020044 C   FIELD 06w01 PNAGA: Next address generation algorithm of peripheral
@@ -2115,11 +2115,11 @@
 0x4002004C C   FIELD 00w32 PADDR: Peripheral base address
 0x40020050 B  REGISTER CH3MADDR (rw): DMA channel 3 memory base address register
 0x40020050 C   FIELD 00w32 MADDR: Memory base address
-0x40020058 B  REGISTER CH4CTL0 (rw): DMA channel configuration register (DMA_CH4CTL0)
+0x40020058 B  REGISTER CH4CTL (rw): DMA channel configuration register (DMA_CH4CTL0)
 0x40020058 C   FIELD 00w01 CHEN: Channel enable
 0x40020058 C   FIELD 01w01 FTFIE: Enable bit for full transfer finish interrupt
 0x40020058 C   FIELD 02w01 HTFIE: Enable bit for half transfer finish interrupt
-0x40020058 C   FIELD 03w01 TAEIE: Enable bit for tranfer access error interrupt
+0x40020058 C   FIELD 03w01 ERRIE: Enable bit for tranfer access error interrupt
 0x40020058 C   FIELD 04w01 DIR: Transfer mode
 0x40020058 C   FIELD 05w01 CMEN: Circular mode enable
 0x40020058 C   FIELD 06w01 PNAGA: Next address generation algorithm of peripheral
@@ -2134,11 +2134,11 @@
 0x40020060 C   FIELD 00w32 PADDR: Peripheral base address
 0x40020064 B  REGISTER CH4MADDR (rw): DMA channel 4 memory base address register
 0x40020064 C   FIELD 00w32 MADDR: Memory base address
-0x4002006C B  REGISTER CH5CTL0 (rw): DMA channel configuration register (DMA_CH5CTL0)
+0x4002006C B  REGISTER CH5CTL (rw): DMA channel configuration register (DMA_CH5CTL0)
 0x4002006C C   FIELD 00w01 CHEN: Channel enable
 0x4002006C C   FIELD 01w01 FTFIE: Enable bit for full transfer finish interrupt
 0x4002006C C   FIELD 02w01 HTFIE: Enable bit for half transfer finish interrupt
-0x4002006C C   FIELD 03w01 TAEIE: Enable bit for tranfer access error interrupt
+0x4002006C C   FIELD 03w01 ERRIE: Enable bit for tranfer access error interrupt
 0x4002006C C   FIELD 04w01 DIR: Transfer mode
 0x4002006C C   FIELD 05w01 CMEN: Circular mode enable
 0x4002006C C   FIELD 06w01 PNAGA: Next address generation algorithm of peripheral
@@ -2153,11 +2153,11 @@
 0x40020074 C   FIELD 00w32 PADDR: Peripheral base address
 0x40020078 B  REGISTER CH5MADDR (rw): DMA channel 5 memory base address register
 0x40020078 C   FIELD 00w32 MADDR: Memory base address
-0x40020080 B  REGISTER CH6CTL0 (rw): DMA channel configuration register (DMA_CH6CTL0)
+0x40020080 B  REGISTER CH6CTL (rw): DMA channel configuration register (DMA_CH6CTL0)
 0x40020080 C   FIELD 00w01 CHEN: Channel enable
 0x40020080 C   FIELD 01w01 FTFIE: Enable bit for full transfer finish interrupt
 0x40020080 C   FIELD 02w01 HTFIE: Enable bit for full transfer finish interrupt
-0x40020080 C   FIELD 03w01 TAEIE: Enable bit for tranfer access error interrupt
+0x40020080 C   FIELD 03w01 ERRIE: Enable bit for tranfer access error interrupt
 0x40020080 C   FIELD 04w01 DIR: Transfer mode
 0x40020080 C   FIELD 05w01 CMEN: Circular mode enable
 0x40020080 C   FIELD 06w01 PNAGA: Next address generation algorithm of peripheral
