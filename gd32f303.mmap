@@ -3480,7 +3480,7 @@
 0x40007004 C   FIELD 00w01 WUF (ro): Wakeup flag
 0x40007004 C   FIELD 01w01 STBF (ro): Standby flag
 0x40007004 C   FIELD 02w01 LVDF (ro): Low Voltage Detector Status Flag
-0x40007004 C   FIELD 08w01 WUPEN (rw): Enable WKUP pin
+0x40007004 C   FIELD 08w01 WUPEN0 (rw): Enable WKUP pin
 0x40007004 C   FIELD 14w01 LDOVSRF (ro): LDO voltage select ready flag
 0x40007004 C   FIELD 16w01 HDRF (ro): High-driver ready flag
 0x40007004 C   FIELD 17w01 HDSRF (ro): High-driver switch ready flag
@@ -6086,7 +6086,7 @@
 0x4002048C B  REGISTER CH6MADDR (rw): Channel 6 memory base address register
 0x4002048C C   FIELD 00w32 MADDR: Memory base address
 0x40021000 A PERIPHERAL RCU
-0x40021000 B  REGISTER CTL: Control register
+0x40021000 B  REGISTER CTL0: Control register
 0x40021000 C   FIELD 00w01 IRC8MEN (rw): Internal 8MHz RC oscillator Enable
 0x40021000 C   FIELD 01w01 IRC8MSTB (ro): IRC8M Internal 8MHz RC Oscillator stabilization Flag
 0x40021000 C   FIELD 03w05 IRC8MADJ (rw): Internal 8MHz RC Oscillator clock trim adjust value
