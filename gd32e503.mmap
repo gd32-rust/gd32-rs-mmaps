@@ -105,7 +105,7 @@
 0x40000028 B  REGISTER PSC (rw): Prescaler register
 0x40000028 C   FIELD 00w16 PSC: Prescaler value of the counter clock
 0x4000002C B  REGISTER CAR (rw): Counter auto reload register
-0x4000002C C   FIELD 00w32 CARL: Counter auto reload value
+0x4000002C C   FIELD 00w32 CAR: Counter auto reload value
 0x40000034 B  REGISTER CH0CV (rw): Channel 0 capture/compare value register
 0x40000034 C   FIELD 00w32 CH0VAL: Capture or compare value of channel 0
 0x40000038 B  REGISTER CH1CV (rw): Channel 1 capture/compare value register
@@ -228,7 +228,7 @@
 0x40000428 B  REGISTER PSC (rw): Prescaler register
 0x40000428 C   FIELD 00w16 PSC: Prescaler value of the counter clock
 0x4000042C B  REGISTER CAR (rw): Counter auto reload register
-0x4000042C C   FIELD 00w16 CARL: Counter auto reload value
+0x4000042C C   FIELD 00w16 CAR: Counter auto reload value
 0x40000434 B  REGISTER CH0CV (rw): Channel 0 capture/compare value register
 0x40000434 C   FIELD 00w16 CH0VAL: Capture or compare value of channel 0
 0x40000438 B  REGISTER CH1CV (rw): Channel 1 capture/compare value register
@@ -351,7 +351,7 @@
 0x40000828 B  REGISTER PSC (rw): Prescaler register
 0x40000828 C   FIELD 00w16 PSC: Prescaler value of the counter clock
 0x4000082C B  REGISTER CAR (rw): Counter auto reload register
-0x4000082C C   FIELD 00w16 CARL: Counter auto reload value
+0x4000082C C   FIELD 00w16 CAR: Counter auto reload value
 0x40000834 B  REGISTER CH0CV (rw): Channel 0 capture/compare value register
 0x40000834 C   FIELD 00w16 CH0VAL: Capture or compare value of channel 0
 0x40000838 B  REGISTER CH1CV (rw): Channel 1 capture/compare value register
@@ -474,7 +474,7 @@
 0x40000C28 B  REGISTER PSC (rw): Prescaler register
 0x40000C28 C   FIELD 00w16 PSC: Prescaler value of the counter clock
 0x40000C2C B  REGISTER CAR (rw): Counter auto reload register
-0x40000C2C C   FIELD 00w16 CARL: Counter auto reload value
+0x40000C2C C   FIELD 00w16 CAR: Counter auto reload value
 0x40000C34 B  REGISTER CH0CV (rw): Channel 0 capture/compare value register
 0x40000C34 C   FIELD 00w16 CH0VAL: Capture or compare value of channel 0
 0x40000C38 B  REGISTER CH1CV (rw): Channel 1 capture/compare value register
@@ -511,7 +511,7 @@
 0x40001028 B  REGISTER PSC (rw): Prescaler register
 0x40001028 C   FIELD 00w16 PSC: Prescaler value of the counter clock
 0x4000102C B  REGISTER CAR (rw): Counter auto reload register
-0x4000102C C   FIELD 00w16 CARL: Counter auto reload value
+0x4000102C C   FIELD 00w16 CAR: Counter auto reload value
 0x40001400 A PERIPHERAL TIMER6
 0x40001400 B  REGISTER CTL0 (rw): control register 0
 0x40001400 C   FIELD 00w01 CEN: Counter enable
@@ -533,7 +533,7 @@
 0x40001428 B  REGISTER PSC (rw): Prescaler register
 0x40001428 C   FIELD 00w16 PSC: Prescaler value of the counter clock
 0x4000142C B  REGISTER CAR (rw): Counter auto reload register
-0x4000142C C   FIELD 00w16 CARL: Counter auto reload value
+0x4000142C C   FIELD 00w16 CAR: Counter auto reload value
 0x40001800 A PERIPHERAL TIMER11
 0x40001800 B  REGISTER CTL0 (rw): control register 0
 0x40001800 C   FIELD 00w01 CEN: Counter enable
@@ -591,7 +591,7 @@
 0x40001828 B  REGISTER PSC (rw): Prescaler register
 0x40001828 C   FIELD 00w16 PSC: Prescaler value of the counter clock
 0x4000182C B  REGISTER CAR (rw): Counter auto reload register
-0x4000182C C   FIELD 00w16 CARL: Counter auto reload value
+0x4000182C C   FIELD 00w16 CAR: Counter auto reload value
 0x40001834 B  REGISTER CH0CV (rw): Channel 0 capture/compare value register
 0x40001834 C   FIELD 00w16 CH0VAL: Capture or compare value of channel0
 0x40001838 B  REGISTER CH1CV (rw): Channel 1 capture/compare value register
@@ -635,7 +635,7 @@
 0x40001C28 B  REGISTER PSC (rw): Prescaler register
 0x40001C28 C   FIELD 00w16 PSC: Prescaler value of the counter clock
 0x40001C2C B  REGISTER CAR (rw): Counter auto reload register
-0x40001C2C C   FIELD 00w16 CARL: Counter auto reload value
+0x40001C2C C   FIELD 00w16 CAR: Counter auto reload value
 0x40001C34 B  REGISTER CH0CV (rw): Channel 0 capture/compare value register
 0x40001C34 C   FIELD 00w16 CH0VAL: Capture or compare value of channel 0
 0x40001CFC B  REGISTER CFG (rw): configuration register
@@ -677,7 +677,7 @@
 0x40002028 B  REGISTER PSC (rw): Prescaler register
 0x40002028 C   FIELD 00w16 PSC: Prescaler value of the counter clock
 0x4000202C B  REGISTER CAR (rw): Counter auto reload register
-0x4000202C C   FIELD 00w16 CARL: Counter auto reload value
+0x4000202C C   FIELD 00w16 CAR: Counter auto reload value
 0x40002034 B  REGISTER CH0CV (rw): Channel 0 capture/compare value register
 0x40002034 C   FIELD 00w16 CH0VAL: Capture or compare value of channel 0
 0x400020FC B  REGISTER CFG (rw): configuration register
@@ -766,13 +766,13 @@
 0x40003808 C   FIELD 07w01 TRANS (ro): Transmitting On-going Bit
 0x40003808 C   FIELD 08w01 FERR (rw): Format Error
 0x4000380C B  REGISTER DATA (rw): data register
-0x4000380C C   FIELD 00w16 SPI_DATA: Data transfer register
+0x4000380C C   FIELD 00w16 DATA: Data transfer register
 0x40003810 B  REGISTER CRCPOLY (rw): CRC polynomial register
-0x40003810 C   FIELD 00w16 CPR: CRC polynomial register
+0x40003810 C   FIELD 00w16 CRCPOLY: CRC polynomial register
 0x40003814 B  REGISTER RCRC (ro): RX CRC register
-0x40003814 C   FIELD 00w16 RCR: RX CRC register
+0x40003814 C   FIELD 00w16 RCRC: RX CRC register
 0x40003818 B  REGISTER TCRC (ro): TX CRC register
-0x40003818 C   FIELD 00w16 TCR: Tx CRC register
+0x40003818 C   FIELD 00w16 TCRC: Tx CRC register
 0x4000381C B  REGISTER I2SCTL (rw): I2S control register
 0x4000381C C   FIELD 00w01 CHLEN: Channel length (number of bits per audio channel)
 0x4000381C C   FIELD 01w02 DTLEN: Data length
@@ -822,13 +822,13 @@
 0x40003C08 C   FIELD 07w01 TRANS (ro): Transmitting On-going Bit
 0x40003C08 C   FIELD 08w01 FERR (rw): Format Error
 0x40003C0C B  REGISTER DATA (rw): data register
-0x40003C0C C   FIELD 00w16 SPI_DATA: Data transfer register
+0x40003C0C C   FIELD 00w16 DATA: Data transfer register
 0x40003C10 B  REGISTER CRCPOLY (rw): CRC polynomial register
-0x40003C10 C   FIELD 00w16 CPR: CRC polynomial register
+0x40003C10 C   FIELD 00w16 CRCPOLY: CRC polynomial register
 0x40003C14 B  REGISTER RCRC (ro): RX CRC register
-0x40003C14 C   FIELD 00w16 RCR: RX CRC register
+0x40003C14 C   FIELD 00w16 RCRC: RX CRC register
 0x40003C18 B  REGISTER TCRC (ro): TX CRC register
-0x40003C18 C   FIELD 00w16 TCR: Tx CRC register
+0x40003C18 C   FIELD 00w16 TCRC: Tx CRC register
 0x40003C1C B  REGISTER I2SCTL (rw): I2S control register
 0x40003C1C C   FIELD 00w01 CHLEN: Channel length (number of bits per audio channel)
 0x40003C1C C   FIELD 01w02 DTLEN: Data length
@@ -1510,8 +1510,8 @@
 0x40006418 C   FIELD 24w08 RECNT (ro): Receive Error Count defined by the CAN standard
 0x4000641C B  REGISTER BT (rw): Bit timing register
 0x4000641C C   FIELD 00w10 BAUDPSC: Baud rate prescaler
-0x4000641C C   FIELD 16w04 BS1_0_3: Bit segment 1
-0x4000641C C   FIELD 20w03 BS2_0_2: Bit segment 2
+0x4000641C C   FIELD 16w04 BS1: Bit segment 1
+0x4000641C C   FIELD 20w03 BS2: Bit segment 2
 0x4000641C C   FIELD 24w05 SJW: Resynchronization jump width
 0x4000641C C   FIELD 30w01 LCMOD: Loopback communication mode
 0x4000641C C   FIELD 31w01 SCMOD: Silent communication mode
@@ -3662,8 +3662,8 @@
 0x40006818 C   FIELD 24w08 RECNT (ro): Receive Error Count defined by the CAN standard
 0x4000681C B  REGISTER BT (rw): Bit timing register
 0x4000681C C   FIELD 00w10 BAUDPSC: Baud rate prescaler
-0x4000681C C   FIELD 16w04 BS1_0_3: Bit segment 1
-0x4000681C C   FIELD 20w03 BS2_0_2: Bit segment 2
+0x4000681C C   FIELD 16w04 BS1: Bit segment 1
+0x4000681C C   FIELD 20w03 BS2: Bit segment 2
 0x4000681C C   FIELD 24w05 SJW: Resynchronization jump width
 0x4000681C C   FIELD 30w01 LCMOD: Loopback communication mode
 0x4000681C C   FIELD 31w01 SCMOD: Silent communication mode
@@ -5810,7 +5810,7 @@
 0x40012C28 B  REGISTER PSC (rw): prescaler
 0x40012C28 C   FIELD 00w16 PSC: Prescaler value of the counter clock
 0x40012C2C B  REGISTER CAR (rw): Counter auto reload register
-0x40012C2C C   FIELD 00w16 CARL: Counter auto reload value
+0x40012C2C C   FIELD 00w16 CAR: Counter auto reload value
 0x40012C30 B  REGISTER CREP (rw): Counter repetition register
 0x40012C30 C   FIELD 00w08 CREP: Counter repetition value
 0x40012C34 B  REGISTER CH0CV (rw): Channel 0 capture/compare value register
@@ -5874,13 +5874,13 @@
 0x40013008 C   FIELD 07w01 TRANS (ro): Transmitting On-going Bit
 0x40013008 C   FIELD 08w01 FERR (rw): Format Error
 0x4001300C B  REGISTER DATA (rw): data register
-0x4001300C C   FIELD 00w16 SPI_DATA: Data transfer register
+0x4001300C C   FIELD 00w16 DATA: Data transfer register
 0x40013010 B  REGISTER CRCPOLY (rw): CRC polynomial register
-0x40013010 C   FIELD 00w16 CPR: CRC polynomial register
+0x40013010 C   FIELD 00w16 CRCPOLY: CRC polynomial register
 0x40013014 B  REGISTER RCRC (ro): RX CRC register
-0x40013014 C   FIELD 00w16 RCR: RX CRC register
+0x40013014 C   FIELD 00w16 RCRC: RX CRC register
 0x40013018 B  REGISTER TCRC (ro): TX CRC register
-0x40013018 C   FIELD 00w16 TCR: Tx CRC register
+0x40013018 C   FIELD 00w16 TCRC: Tx CRC register
 0x4001301C B  REGISTER I2SCTL (rw): I2S control register
 0x4001301C C   FIELD 00w01 CHLEN: Channel length (number of bits per audio channel)
 0x4001301C C   FIELD 01w02 DTLEN: Data length
@@ -6019,7 +6019,7 @@
 0x40013428 B  REGISTER PSC (rw): prescaler
 0x40013428 C   FIELD 00w16 PSC: Prescaler value of the counter clock
 0x4001342C B  REGISTER CAR (rw): Counter auto reload register
-0x4001342C C   FIELD 00w16 CARL: Counter auto reload value
+0x4001342C C   FIELD 00w16 CAR: Counter auto reload value
 0x40013430 B  REGISTER CREP (rw): Counter repetition register
 0x40013430 C   FIELD 00w08 CREP: Counter repetition value
 0x40013434 B  REGISTER CH0CV (rw): Channel 0 capture/compare value register
@@ -6312,7 +6312,7 @@
 0x40014C28 B  REGISTER PSC (rw): Prescaler register
 0x40014C28 C   FIELD 00w16 PSC: Prescaler value of the counter clock
 0x40014C2C B  REGISTER CAR (rw): Counter auto reload register
-0x40014C2C C   FIELD 00w16 CARL: Counter auto reload value
+0x40014C2C C   FIELD 00w16 CAR: Counter auto reload value
 0x40014C34 B  REGISTER CH0CV (rw): Channel 0 capture/compare value register
 0x40014C34 C   FIELD 00w16 CH0VAL: Capture or compare value of channel0
 0x40014C38 B  REGISTER CH1CV (rw): Channel 1 capture/compare value register
@@ -6356,7 +6356,7 @@
 0x40015028 B  REGISTER PSC (rw): Prescaler register
 0x40015028 C   FIELD 00w16 PSC: Prescaler value of the counter clock
 0x4001502C B  REGISTER CAR (rw): Counter auto reload register
-0x4001502C C   FIELD 00w16 CARL: Counter auto reload value
+0x4001502C C   FIELD 00w16 CAR: Counter auto reload value
 0x40015034 B  REGISTER CH0CV (rw): Channel 0 capture/compare value register
 0x40015034 C   FIELD 00w16 CH0VAL: Capture or compare value of channel 0
 0x400150FC B  REGISTER CFG (rw): configuration register
@@ -6398,7 +6398,7 @@
 0x40015428 B  REGISTER PSC (rw): Prescaler register
 0x40015428 C   FIELD 00w16 PSC: Prescaler value of the counter clock
 0x4001542C B  REGISTER CAR (rw): Counter auto reload register
-0x4001542C C   FIELD 00w16 CARL: Counter auto reload value
+0x4001542C C   FIELD 00w16 CAR: Counter auto reload value
 0x40015434 B  REGISTER CH0CV (rw): Channel 0 capture/compare value register
 0x40015434 C   FIELD 00w16 CH0VAL: Capture or compare value of channel 0
 0x400154FC B  REGISTER CFG (rw): configuration register
