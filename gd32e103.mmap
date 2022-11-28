@@ -1102,9 +1102,7 @@
 0x40005404 C   FIELD 11w01 DMAON: DMA mode switch
 0x40005404 C   FIELD 12w01 DMALST: Flag indicating DMA last transfer
 0x40005408 B  REGISTER SADDR0 (rw): Slave address register 0
-0x40005408 C   FIELD 00w01 ADDRESS0: Bit 0 of a 10-bit address
-0x40005408 C   FIELD 01w07 ADDRESS7_1: 7-bit address or bits 7:1 of a 10-bit address
-0x40005408 C   FIELD 08w02 ADDRESS9_8: Highest two bits of a 10-bit address
+0x40005408 C   FIELD 00w10 ADDRESS: Bit 0 of a 10-bit address
 0x40005408 C   FIELD 15w01 ADDFORMAT: Address mode for the I2C slave
 0x4000540C B  REGISTER SADDR1 (rw): Slave address register 1
 0x4000540C C   FIELD 00w01 DUADEN: Dual-Address mode switch
@@ -1180,9 +1178,7 @@
 0x40005804 C   FIELD 11w01 DMAON: DMA mode switch
 0x40005804 C   FIELD 12w01 DMALST: Flag indicating DMA last transfer
 0x40005808 B  REGISTER SADDR0 (rw): Slave address register 0
-0x40005808 C   FIELD 00w01 ADDRESS0: Bit 0 of a 10-bit address
-0x40005808 C   FIELD 01w07 ADDRESS7_1: 7-bit address or bits 7:1 of a 10-bit address
-0x40005808 C   FIELD 08w02 ADDRESS9_8: Highest two bits of a 10-bit address
+0x40005808 C   FIELD 00w10 ADDRESS: Bit 0 of a 10-bit address
 0x40005808 C   FIELD 15w01 ADDFORMAT: Address mode for the I2C slave
 0x4000580C B  REGISTER SADDR1 (rw): Slave address register 1
 0x4000580C C   FIELD 00w01 DUADEN: Dual-Address mode switch
@@ -5648,7 +5644,6 @@
 0x40007000 C   FIELD 04w01 LVDEN: Low Voltage Detector Enable
 0x40007000 C   FIELD 05w03 LVDT: Low Voltage Detector Threshold
 0x40007000 C   FIELD 08w01 BKPWEN: Backup Domain Write Enable
-0x40007000 C   FIELD 14w02 LDOVS: LDO output voltage select
 0x40007004 B  REGISTER CS: power control/status register
 0x40007004 C   FIELD 00w01 WUF (ro): Wakeup flag
 0x40007004 C   FIELD 01w01 STBF (ro): Standby flag
@@ -7879,15 +7874,15 @@
 0x40021004 C   FIELD 04w04 AHBPSC (rw): AHB prescaler selection
 0x40021004 C   FIELD 08w03 APB1PSC (rw): APB1 prescaler selection
 0x40021004 C   FIELD 11w03 APB2PSC (rw): APB2 prescaler selection
-0x40021004 C   FIELD 14w02 ADCPSC_1_0 (rw): ADC clock prescaler selection
+0x40021004 C   FIELD 14w02 ADCPSC (rw): ADC clock prescaler selection
 0x40021004 C   FIELD 16w01 PLLSEL (rw): PLL Clock Source Selection
-0x40021004 C   FIELD 17w01 PREDV0_LSB (rw): The LSB of PREDV0 division factor
+0x40021004 C   FIELD 17w01 PLLPREDV (rw): The LSB of PREDV0 division factor
 0x40021004 C   FIELD 18w04 PLLMF (rw): The PLL clock multiplication factor
-0x40021004 C   FIELD 22w02 USBFSPSC_1_0 (rw): USBFS clock prescaler selection
+0x40021004 C   FIELD 22w02 USBFSPSC (rw): USBFS clock prescaler selection
 0x40021004 C   FIELD 24w04 CKOUTSEL (rw): CKOUT0 Clock Source Selection
 0x40021004 C   FIELD 28w01 ADCPSC_2 (rw): Bit 2 of ADCPSC
 0x40021004 C   FIELD 29w02 PLLMF_MSB (rw): Bit 5 and Bit 4 of PLLMF
-0x40021004 C   FIELD 31w01 USBFSPSC (rw): Bit 2 of USBFSPSC
+0x40021004 C   FIELD 31w01 USBFSPSC_3 (rw): Bit 2 of USBFSPSC
 0x40021008 B  REGISTER INT: Clock interrupt register (RCU_INT)
 0x40021008 C   FIELD 00w01 IRC40KSTBIF (ro): IRC40K stabilization interrupt flag
 0x40021008 C   FIELD 01w01 LXTALSTBIF (ro): LXTAL stabilization interrupt flag
@@ -8962,7 +8957,6 @@
 0xE0042004 C   FIELD 01w01 DSLP_HOLD: Deep-sleep mode hold register
 0xE0042004 C   FIELD 02w01 STB_HOLD: Standby mode hold register
 0xE0042004 C   FIELD 05w01 TRACE_IOEN: Trace pin allocation enable
-0xE0042004 C   FIELD 06w02 TRACE_MODE: Trace pin allocation mode
 0xE0042004 C   FIELD 08w01 FWDGT_HOLD: FWDGT hold bit
 0xE0042004 C   FIELD 09w01 WWDGT_HOLD: WWDGT hold bit
 0xE0042004 C   FIELD 10w01 TIMER0_HOLD: TIMER 0 hold bit
