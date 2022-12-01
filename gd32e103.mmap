@@ -7874,13 +7874,12 @@
 0x40021004 C   FIELD 04w04 AHBPSC (rw): AHB prescaler selection
 0x40021004 C   FIELD 08w03 APB1PSC (rw): APB1 prescaler selection
 0x40021004 C   FIELD 11w03 APB2PSC (rw): APB2 prescaler selection
-0x40021004 C   FIELD 14w02 ADCPSC (rw): ADC clock prescaler selection
+0x40021004 C   FIELD 14w03 ADCPSC: ADC clock prescaler selection
 0x40021004 C   FIELD 16w01 PLLSEL (rw): PLL Clock Source Selection
 0x40021004 C   FIELD 17w01 PLLPREDV (rw): The LSB of PREDV0 division factor
 0x40021004 C   FIELD 18w04 PLLMF (rw): The PLL clock multiplication factor
 0x40021004 C   FIELD 22w02 USBFSPSC (rw): USBFS clock prescaler selection
 0x40021004 C   FIELD 24w04 CKOUTSEL (rw): CKOUT0 Clock Source Selection
-0x40021004 C   FIELD 28w01 ADCPSC_2 (rw): Bit 2 of ADCPSC
 0x40021004 C   FIELD 29w02 PLLMF_MSB (rw): Bit 5 and Bit 4 of PLLMF
 0x40021004 C   FIELD 31w01 USBFSPSC_3 (rw): Bit 2 of USBFSPSC
 0x40021008 B  REGISTER INT: Clock interrupt register (RCU_INT)
