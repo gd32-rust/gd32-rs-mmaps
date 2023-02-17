@@ -1831,7 +1831,7 @@
 0x40021028 C   FIELD 19w01 PCRST: GPIO port C reset
 0x40021028 C   FIELD 22w01 PFRST: GPIO port F reset
 0x4002102C B  REGISTER CFG1 (rw): Configuration register 1
-0x4002102C C   FIELD 00w04 PREDV: CK_HXTAL or CK_IRC48M divider previous PLL
+0x4002102C C   FIELD 00w04 HXTALPREDV: CK_HXTAL or CK_IRC48M divider previous PLL
 0x40021030 B  REGISTER CFG2 (rw): Configuration register 2
 0x40021030 C   FIELD 00w02 USART0SEL: CK_USART0 clock source selection
 0x40021030 C   FIELD 08w01 ADCSEL: CK_ADC clock source selection
