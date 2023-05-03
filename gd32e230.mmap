@@ -1569,7 +1569,7 @@
 0x400148FC B  REGISTER CFG (rw): configuration register
 0x400148FC C   FIELD 00w01 OUTSEL: The output value selection
 0x400148FC C   FIELD 01w01 CHVSEL: Write CHxVAL register selection
-0x40015800 A PERIPHERAL DBGMCU
+0x40015800 A PERIPHERAL DBG
 0x40015800 B  REGISTER ID (ro): MCU Device ID Code Register
 0x40015800 C   FIELD 00w32 ID_CODE: DBG ID code register
 0x40015804 B  REGISTER CTL0 (rw): Debug Control Register 0
