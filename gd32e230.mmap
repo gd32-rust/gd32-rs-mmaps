@@ -1015,7 +1015,7 @@
 0x40012C08 C   FIELD 07w01 MSM: Master/Slave mode
 0x40012C08 C   FIELD 08w04 ETFC: External trigger filter
 0x40012C08 C   FIELD 12w02 ETPSC: External trigger prescaler
-0x40012C08 C   FIELD 14w01 SCM1: Part of SMC for enable External clock mode1
+0x40012C08 C   FIELD 14w01 SMC1: Part of SMC for enable External clock mode1
 0x40012C08 C   FIELD 15w01 ETP: External trigger polarity
 0x40012C0C B  REGISTER DMAINTEN (rw): DMA/Interrupt enable register
 0x40012C0C C   FIELD 00w01 UPIE: Update interrupt enable
