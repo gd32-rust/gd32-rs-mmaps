@@ -689,7 +689,7 @@
 0x40005400 C   FIELD 13w01 SALT: SMBus alert
 0x40005400 C   FIELD 15w01 SRESET: Software reset I2C
 0x40005404 B  REGISTER CTL1 (rw): Control register 1
-0x40005404 C   FIELD 00w06 I2CCLK: I2C Peripheral clock frequency
+0x40005404 C   FIELD 00w07 I2CCLK: I2C Peripheral clock frequency
 0x40005404 C   FIELD 08w01 ERRIE: Error interrupt enable
 0x40005404 C   FIELD 09w01 EVIE: Event interrupt enable
 0x40005404 C   FIELD 10w01 BUFIE: Buffer interrupt enable
@@ -732,7 +732,7 @@
 0x4000541C C   FIELD 14w01 DTCY: Duty cycle in fast mode
 0x4000541C C   FIELD 15w01 FAST: I2C speed selection in master mode
 0x40005420 B  REGISTER RT (rw): Rise time register
-0x40005420 C   FIELD 00w06 RISETIME: Maximum rise time in master mode
+0x40005420 C   FIELD 00w07 RISETIME: Maximum rise time in master mode
 0x40005800 A PERIPHERAL I2C1
 0x40005800 B  REGISTER CTL0 (rw): Control register 0
 0x40005800 C   FIELD 00w01 I2CEN: I2C peripheral enable
@@ -750,7 +750,7 @@
 0x40005800 C   FIELD 13w01 SALT: SMBus alert
 0x40005800 C   FIELD 15w01 SRESET: Software reset I2C
 0x40005804 B  REGISTER CTL1 (rw): Control register 1
-0x40005804 C   FIELD 00w06 I2CCLK: I2C Peripheral clock frequency
+0x40005804 C   FIELD 00w07 I2CCLK: I2C Peripheral clock frequency
 0x40005804 C   FIELD 08w01 ERRIE: Error interrupt enable
 0x40005804 C   FIELD 09w01 EVIE: Event interrupt enable
 0x40005804 C   FIELD 10w01 BUFIE: Buffer interrupt enable
@@ -793,7 +793,7 @@
 0x4000581C C   FIELD 14w01 DTCY: Duty cycle in fast mode
 0x4000581C C   FIELD 15w01 FAST: I2C speed selection in master mode
 0x40005820 B  REGISTER RT (rw): Rise time register
-0x40005820 C   FIELD 00w06 RISETIME: Maximum rise time in master mode
+0x40005820 C   FIELD 00w07 RISETIME: Maximum rise time in master mode
 0x40005C00 A PERIPHERAL USBD
 0x40005C00 B  REGISTER EP0CS (rw): endpoint 0 register
 0x40005C00 C   FIELD 00w04 EP_AR: Endpoint address
@@ -1064,7 +1064,7 @@
 0x4000C000 C   FIELD 13w01 SALT: SMBus alert
 0x4000C000 C   FIELD 15w01 SRESET: Software reset I2C
 0x4000C004 B  REGISTER CTL1 (rw): Control register 1
-0x4000C004 C   FIELD 00w06 I2CCLK: I2C Peripheral clock frequency
+0x4000C004 C   FIELD 00w07 I2CCLK: I2C Peripheral clock frequency
 0x4000C004 C   FIELD 08w01 ERRIE: Error interrupt enable
 0x4000C004 C   FIELD 09w01 EVIE: Event interrupt enable
 0x4000C004 C   FIELD 10w01 BUFIE: Buffer interrupt enable
@@ -1107,7 +1107,7 @@
 0x4000C01C C   FIELD 14w01 DTCY: Duty cycle in fast mode
 0x4000C01C C   FIELD 15w01 FAST: I2C speed selection in master mode
 0x4000C020 B  REGISTER RT (rw): Rise time register
-0x4000C020 C   FIELD 00w06 RISETIME: Maximum rise time in master mode
+0x4000C020 C   FIELD 00w07 RISETIME: Maximum rise time in master mode
 0x40010000 A PERIPHERAL SYSCFG
 0x40010000 B  REGISTER CFG0 (rw): System configuration register 0
 0x40010000 C   FIELD 00w02 BOOT_MODE (ro): Boot mode
