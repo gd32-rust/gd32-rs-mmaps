@@ -2179,7 +2179,7 @@
 0x4002201C C   FIELD 16w16 OB_DATA: Store OB_DATA[15:0] of option byte block after system reset
 0x40022020 B  REGISTER WP (ro): Write protection register
 0x40022020 C   FIELD 00w16 OB_WP: Store OB_WP[15:0] of option byte block after system reset
-0x400220FC B  REGISTER WSEN (ro): Flash wait state control register
+0x400220FC B  REGISTER WSEN (rw): Flash wait state control register
 0x400220FC C   FIELD 00w01 WSEN: FMC wait state enable register
 0x400220FC C   FIELD 01w01 BPEN: FMC bit program enable register
 0x40022100 B  REGISTER PID (ro): Flash Product ID register
